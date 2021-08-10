@@ -19,5 +19,14 @@
         <br>
         <input type='submit'>
     </form>
+    <ul>
+        <% for (let i=0; i<allGame.length; i++) { %>
+            <li>
+                <a href="/game/<%= allGame[i]._id %>">
+                    <%= allGame[i].title %>
+                </a>
+            </li>
+        <% } %>
+    </ul>
 </body>
 </html>
