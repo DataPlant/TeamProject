@@ -1,0 +1,17 @@
+body {
+    background-position: center;
+}
+
+div {
+    background-position: center;
+    text-align: center;
+    color: black;
+    background-color: rgb(202, 202, 202);
+    margin-top: 100px;
+    padding: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+p {
+    font-style: italic;
+}
