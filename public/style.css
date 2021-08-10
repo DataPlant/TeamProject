@@ -1,8 +1,8 @@
 body {
     background-position: center;
+    margin: 0px;
 }
-
-div {
+#title {
     background-position: center;
     text-align: center;
     color: black;
@@ -12,6 +12,54 @@ div {
     margin-left: 200px;
     margin-right: 200px;
 }
+#categories{
+    display: grid;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+#music{
+    position: absolute;
+    border: 1px solid black;
+    height: 200px;
+    width: 250px;
+    margin-left: 20%;
+    margin-top: 11%;
+    text-align: center;
+}
+#games{
+    border: 1px solid black;
+    width: 65%;
+    height: 50%;
+    padding: 2px;
+}
+#movies{
+    border: 1px solid black;
+    width: 65%;
+    height: 50%;
+    padding: 2px;
+}
+#shows{
+    border: 1px solid black;
+    width: 65%;
+    height: 50%;
+    padding: 2px;
+}
 p {
     font-style: italic;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(202, 202, 202);
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+nav a:hover{
+    color: white;
 }
