@@ -1,12 +1,14 @@
 const express = require('express');
 const app = express();
+const methodOverride = require('method-override');
 ////Bringing routers in
 const gameRoutes = require('./routes/gameRoutes.js');
 const musicRoutes = require('./routes/musicRoutes.js');
 ////
 const PORT = 4000;
 ////
-
+app.use(methodOverride('_method'))
+app.use(express.urlencoded({ extended: false }));
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
