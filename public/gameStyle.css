@@ -1,48 +1,62 @@
 body {
+    background-image:url('./images/gamebg.jpg');
     background-position: center;
+    background-repeat: no-repeat;  
+    background-size: 57%;
+    background-color: #363636;
     margin: 0px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Vollkorn SC', serif;
 }
 #title {
+    border: 3px solid black;
     font-weight: 200;
     background-position: center;
     text-align: center;
-    color: black;
-    background-color: rgb(202, 202, 202);
-    margin-top: 100px;
-    padding: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
+    color: rgba(255,255,255,0.7);
+    background-color: rgba(1,1,1,0.8);
+    margin-top: 5%;
+    padding: 10px;
+    margin-left: 37%;
+    width: 25%;
 }
 nav {
+    color: black;
     font-weight: 400;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(202, 202, 202);
+    background-color: #363636;
     padding: 5px;
+    border: 2px solid #D2D2D2;
 }
-
+#nav:visited{
+    color: #363636;
+}
 nav a {
     text-decoration: none;
     margin-left: 5px;
 }
 
 a:hover{
-    color: black;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000 ;
+    color: #363636;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black ;
 }
 #add{
-    font-weight: 300;
-    width: 20%;
+    border: 2px solid black;
+    color: #D2D2D2;
+    background: rgba(1,1,1,0.8);
+    font-weight: 100;
+    width: 10%;
     text-align: center;
     padding: 10px;
     font-size: 18px;
-    margin-top: 0%;
+    margin-left: 3%; 
 }
 #add:hover{
-    color: black;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    border: 2px solid white;
+    background: #363636;
+    color: white;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 a:visited{
-    color: red;
+    color: #D2D2D2;
 }
