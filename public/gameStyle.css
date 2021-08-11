@@ -27,9 +27,22 @@ nav a {
     margin-left: 5px;
 }
 
-nav a:hover{
-    color: white;
+a:hover{
+    color: black;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000 ;
+}
+#add{
+    font-weight: 300;
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 0%;
 }
 #add:hover{
-    color: white;
+    color: black;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+a:visited{
+    color: red;
 }

@@ -1,8 +1,10 @@
 body {
     background-position: center;
     margin: 0px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 #title {
+    font-weight: 200;
     background-position: center;
     text-align: center;
     color: black;
@@ -13,6 +15,7 @@ body {
     margin-right: 200px;
 }
 nav {
+    font-weight: 400;
     display: flex;
     justify-content: space-between;
     background-color: rgb(202, 202, 202);
@@ -24,6 +27,22 @@ nav a {
     margin-left: 5px;
 }
 
-nav a:hover{
-    color: white;
+a:hover{
+    color: black;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000 ;
+}
+#add{
+    font-weight: 300;
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 0%;
+}
+#add:hover{
+    color: black;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+a:visited{
+    color: red;
 }
