@@ -57,6 +57,10 @@ a:hover{
     color: white;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
+a:hover{
+    text-shadow: -1px -1px 0 #8A4DCF, 1px -1px 0 #8A4DCF, -1px 1px 0 #8A4DCF, 1px 1px 0 #8A4DCF;
+}
 a:visited{
     color: #D2D2D2;
+    border: 2px solid white;
 }

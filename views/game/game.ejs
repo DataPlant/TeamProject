@@ -17,18 +17,21 @@
     <h2 id='add'><a href='/game/newGame'>Add Game</a></h2>
     <br>
     <ul id='game'>
+        <div id='game-info'>
         <% for(let i=0; i<allGame.length; i++){ %>
             <br>
             <a href='/game/<%= allGame[i]._id %>'>
                 <h2><%= allGame[i].title %></h2>
             </a>
             <h3><%= allGame[i].genre %></h3>
-            <br>
+        </div>
+        <div id='allButtons'>
             <a href='/game/<%= allGame[i]._id %>/edit'>Edit Info</a>
             <form action='/game/<%= allGame[i]._id %>?_method=DELETE' method='POST'>
                 <input type='submit' value='Delete Game'/>
             </form>
+        </div>
+        </ul>
         <% } %>
-    </ul>
 </body>
 </html>
