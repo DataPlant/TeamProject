@@ -10,8 +10,10 @@ router.get('/', (req, res) => {
         })
     })
 });
-
-router.post('/', (req, res) => {
+router.get('/newGame', (req, res) =>{
+    res.render('game/newGame.ejs')
+} );
+router.post('/newGame', (req, res) => {
     console.log(req.body);
     let data = {
         title: req.body.title,
