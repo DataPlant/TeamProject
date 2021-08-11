@@ -10,23 +10,5 @@
 <body>
     <%- include('../partials/navbar.ejs') %>
     <h1>GAME INDEX PAGE</h1>
-    <form method='POST' action='/game'>
-        <label for='title'>Title of Game:</label>
-        <input type='text' name='title'>
-        <br>
-        <label for="summary">Game Summary:</label>
-        <input type="text" name="summary">
-        <br>
-        <input type='submit'>
-    </form>
-    <ul>
-        <% for (let i=0; i<allGame.length; i++) { %>
-            <li>
-                <a href="/game/<%= allGame[i]._id %>">
-                    <%= allGame[i].title %>
-                </a>
-            </li>
-        <% } %>
-    </ul>
 </body>
 </html>
