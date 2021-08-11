@@ -4,6 +4,7 @@ const methodOverride = require('method-override');
 ////Bringing routers in
 const gameRoutes = require('./routes/gameRoutes.js');
 const musicRoutes = require('./routes/musicRoutes.js');
+const movieRoutes = require('./routes/movieRoutes.js')
 ////
 const PORT = 4000;
 ////
@@ -17,6 +18,7 @@ app.get('/', (req, res) => {
 });
 app.use('/game', gameRoutes);
 app.use('/music', musicRoutes);
+app.use('/movie', movieRoutes)
 
 app.listen(PORT, () => {
     console.log(`Running on localhost:${PORT}`);
