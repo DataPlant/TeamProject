@@ -1,21 +1,28 @@
 body {
+    background-image:url('./images/tvbg.jpg');
     background-position: center;
+    background-repeat: no-repeat;  
+    background-size: cover;
     margin: 0px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 #title {
+    border: 3px solid #363636;
+    font-weight: 200;
     background-position: center;
     text-align: center;
-    color: black;
-    background-color: rgb(202, 202, 202);
-    margin-top: 100px;
-    padding: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
+    color: #363636;
+    background-color: #E6E6E6;
+    margin-top: 10%;
+    padding: 20px;
+    margin-left: 35%;
+    width: 25%;
 }
 nav {
+    font-weight: 400;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(202, 202, 202);
+    background-color: #E6E6E6;
     padding: 5px;
 }
 
@@ -24,6 +31,26 @@ nav a {
     margin-left: 5px;
 }
 
-nav a:hover{
+a:hover{
+    color: #363636;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white ;
+}
+#add{
+    background: #F7F7F7;
+    font-weight: 300;
+    width: 10%;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 0%;
+    margin-left: 10%;
+}
+#add:hover{
+    border: 2px solid white;
+    background: #363636;
     color: white;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+a:visited{
+    color: #363636;
 }
