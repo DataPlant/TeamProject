@@ -21,12 +21,15 @@ router.post('/', (req, res) => {
         if(err) return console.log(err);
         res.redirect('/game')
     })
-    // res.redirect('/game');
 });
-// router.get('/:id', (req, res) => {
-//     console.log(req.params.id)
-    
-
-// })
+router.get('/:id', (req, res) => {
+    console.log(req.params.id)
+    db.Game.findById(req.params.id, (err, showGame) => {
+        if(err) return console.log(err);
+        res.render('game/showGame.ejs', {
+            showGame: showGame
+        })
+    })
+})
 
 module.exports = router;
