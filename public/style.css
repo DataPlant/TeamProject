@@ -17,7 +17,7 @@ body {
     margin-left: 50%;
     margin-top: 10%;
 }
-#music{
+#music-category{
     background-image: url('./images/record.png');
     background-position: center;
     background-size: 50%;
@@ -29,8 +29,14 @@ body {
     margin-left: 20%;
     margin-top: 11%;
     display: flex;
-    align-self: flex-end;
 }
+#music{
+   display: inline-block;
+   align-self: flex-end;
+   margin: auto;
+   margin-bottom: 0%; 
+}
+
 #games{
     background-image: url('./images/controller.png');
     background-position: left;
