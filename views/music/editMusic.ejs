@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/movieStyle.css">
+    <link rel="stylesheet" href="/musicStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -13,23 +13,23 @@
 <body>
     <%- include('../partials/navbar.ejs') %>
     <br>
-    <h1>Editing Movie: "<%= foundMovie.title %>"</h1>
+    <h1>Editing Music: "<%= foundMusic.title %>"</h1>
     <br>
-    <form method='POST' action='/movie/<%= foundMovie._id %>?_method=PUT'>
-        <label for='title'>Title of Movie:</label>
-        <input type='text' name='title' value='<%= foundMovie.title %>'>
+    <form method='POST' action='/music/<%= foundMusic._id %>?_method=PUT'>
+        <label for='title'>Title of Music:</label>
+        <input type='text' name='title' value='<%= foundMusic.title %>'>
         <br>
         <br>
         <label for="console">Console:</label>
-        <input type="text" name="console" value='<%= foundMovie.console %>'>
+        <input type="text" name="console" value='<%= foundMusic.console %>'>
         <br>
         <br>
         <label for="genre">Genre:</label>
-        <input type="text" name="genre" value='<%= foundMovie.genre %>'>
+        <input type="text" name="genre" value='<%= foundMusic.genre %>'>
         <br>
         <br>
-        <label for="summary">Movie Summary:</label>
-        <input type="text" name="summary" value='<%= foundMovie.summary %>'>
+        <label for="summary">Music Summary:</label>
+        <input type="text" name="summary" value='<%= foundMusic.summary %>'>
         <br>
         <br>
         <input type='submit'>

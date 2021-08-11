@@ -6,13 +6,15 @@ mongoose.connect(connectionString, {
     useUnifiedTopology: true,
     useCreateIndex: true,
     useFindAndModify: false
-  });
+});
 
-  mongoose.connection.on('connected', () => {
-    console.log(`Mongoose connected to ${connectionString}`);
-  });
+mongoose.connection.on('connected', () => {
+  console.log(`Mongoose connected to ${connectionString}`);
+});
 
-  module.exports = {
-      Game: require('./Game.js'),
-      Movie: require('./Movie.js')
-  }
+module.exports = {
+    Game: require('./Game.js'),
+    Movie: require('./Movie.js'),
+    Music: require('./Music.js'),
+}
+
