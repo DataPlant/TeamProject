@@ -14,6 +14,21 @@
     <%- include('../partials/navbar.ejs') %>
     <h1 id='title'>Your Favorite Movies</h1>
     <br>
-    <h2 id='add'><a href=''>Add Movie</a></h2>
+    <h2 id='add'><a href='/movie/newMovie'>Add Movie</a></h2>
+    <br>
+    <ul id='movie'>
+        <% for(let i=0; i<allMovie.length; i++){ %>
+            <br>
+            <a href='/movie/<%= allMovie[i]._id %>'>
+                <h2><%= allMovie[i].title %></h2>
+            </a>
+            <h3><%= allMovie[i].genre %></h3>
+            <br>
+            <a href='/movie/<%= allMovie[i]._id %>/edit'>Edit Info</a>
+            <form action='/movie/<%= allMovie[i]._id %>?_method=DELETE' method='POST'>
+                <input type='submit' value='Delete Movie'/>
+            </form>
+        <% } %>
+    </ul>
 </body>
 </html>

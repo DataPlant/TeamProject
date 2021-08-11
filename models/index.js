@@ -13,5 +13,6 @@ mongoose.connect(connectionString, {
   });
 
   module.exports = {
-      Game: require('./Game.js')
+      Game: require('./Game.js'),
+      Movie: require('./Movie.js')
   }

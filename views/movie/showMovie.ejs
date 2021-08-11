@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/movieStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('../partials/navbar.ejs') %>
+    <h1><%= showMovie.title %></h1>
+    <h2><%= showMovie.genre %></h2>
+    <h3><%= showMovie.console %></h3>
+    <li><%= showMovie.summary %></li>
+    <br>
+    <a href='/movie/<%= showMovie._id %>/edit'>Edit Info</a>
+    <form action='/movie/<%= showMovie._id %>?_method=DELETE' method='POST'>
+        <input type='submit' value='Delete Movie'/>
+    </form>
+</body>
+</html>

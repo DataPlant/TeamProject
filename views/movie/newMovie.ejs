@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/movieStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('../partials/navbar.ejs') %>
+    <h1>MOVIE NEW PAGE</h1>
+    <form method='POST' action='/movie/newMovie'>
+        <label for='title'>Title of Game:</label>
+        <input type='text' name='title'>
+        <br>
+        <br>
+        <label for="console">Console:</label>
+        <input type="text" name="console">
+        <br>
+        <br>
+        <label for="genre">Genre:</label>
+        <input type="text" name="genre">
+        <br>
+        <br>
+        <label for="summary">Game Summary:</label>
+        <input type="text" name="summary">
+        <br>
+        <br>
+        <input type='submit'>
+    </form>
+</body>
+</html>
