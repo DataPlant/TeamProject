@@ -12,25 +12,30 @@
 </head>
 <body>
     <%- include('../partials/navbar.ejs') %>
-    <h1>GAME NEW PAGE</h1>
-    <form method='POST' action='/game/newGame'>
-        <label for='title'>Title of Game:</label>
-        <input type='text' name='title'>
+    <div id='body'>
+        <h1 id='header'>Add a Video Game</h1>
+        <img id='img' src='../images/controller.png'>
         <br>
         <br>
-        <label for="console">Console:</label>
-        <input type="text" name="console">
-        <br>
-        <br>
-        <label for="genre">Genre:</label>
-        <input type="text" name="genre">
-        <br>
-        <br>
-        <label for="summary">Game Summary:</label>
-        <input type="text" name="summary">
-        <br>
-        <br>
-        <input type='submit'>
-    </form>
+        <form method='POST' action='/game/newGame'>
+            <label for='title'>Title of Game:</label>
+            <input type='text' name='title'>
+            <br>
+            <br>
+            <label for="console" id='console'>Console:</label>
+            <input type="text" name="console" id='consoleInput'>
+            <br>
+            <br>
+            <label for="genre" id='genre'>Genre:</label>
+            <input type="text" name="genre" id='genreInput'>
+            <br>
+            <br>
+            <label for="summary" id='summary'>Game Summary:</label>
+            <input type="text" name="summary" id='summaryInput'>
+            <br>
+            <br>
+            <input type='submit'>
+        </form>
+    </div>
 </body>
 </html>
