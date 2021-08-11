@@ -35,7 +35,9 @@ nav a {
     text-decoration: none;
     margin-left: 5px;
 }
-
+a{
+    color: #D2D2D2;
+}
 a:hover{
     color: #363636;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black ;
@@ -49,7 +51,7 @@ a:hover{
     text-align: center;
     padding: 10px;
     font-size: 18px;
-    margin-left: 3%; 
+    margin-left: 45%; 
 }
 #add:hover{
     border: 2px solid white;
@@ -57,10 +59,34 @@ a:hover{
     color: white;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
-a:hover{
-    text-shadow: -1px -1px 0 #8A4DCF, 1px -1px 0 #8A4DCF, -1px 1px 0 #8A4DCF, 1px 1px 0 #8A4DCF;
-}
 a:visited{
     color: #D2D2D2;
     border: 2px solid white;
+}
+#allButtons{
+    font-size: 24px;
+    margin-right: 5%;
+    text-align: center;
+}
+#movie{
+    color: #D2D2D2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(1,1,1,0.8);
+    margin-left: 10%;
+    width: 75%;
+    text-decoration: none;
+
+}
+#movie{
+    color: #D2D2D2;
+}
+#movie:visited{
+    color: #363636;
+    text-decoration: none;
+}
+#movie-info{
+    margin-left:1%;
+    text-align: center;
 }

@@ -16,9 +16,9 @@
     <br>
     <h2 id='add'><a href='/game/newGame'>Add Game</a></h2>
     <br>
-    <ul id='game'>
-        <div id='game-info'>
-        <% for(let i=0; i<allGame.length; i++){ %>
+    <% for(let i=0; i<allGame.length; i++){ %>
+        <ul id='game'>
+            <div id='game-info'>
             <br>
             <a href='/game/<%= allGame[i]._id %>'>
                 <h2><%= allGame[i].title %></h2>

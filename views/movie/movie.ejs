@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/movieStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/movieStyle.css">
     <title>Document</title>
 </head>
 <body>
@@ -16,19 +16,22 @@
     <br>
     <h2 id='add'><a href='/movie/newMovie'>Add Movie</a></h2>
     <br>
-    <ul id='movie'>
-        <% for(let i=0; i<allMovie.length; i++){ %>
+    <% for(let i=0; i<allMovie.length; i++){ %>
+        <ul id='movie'>
+            <div id='movie-info'>
             <br>
             <a href='/movie/<%= allMovie[i]._id %>'>
                 <h2><%= allMovie[i].title %></h2>
             </a>
             <h3><%= allMovie[i].genre %></h3>
-            <br>
+        </div>
+        <div id='allButtons'>
             <a href='/movie/<%= allMovie[i]._id %>/edit'>Edit Info</a>
             <form action='/movie/<%= allMovie[i]._id %>?_method=DELETE' method='POST'>
                 <input type='submit' value='Delete Movie'/>
             </form>
+        </div>
+        </ul>
         <% } %>
-    </ul>
 </body>
 </html>
