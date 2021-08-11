@@ -8,7 +8,14 @@
 </head>
 <body>
     <%- include('../partials/navbar.ejs') %>
-    <li><%= showGame.title %></li>
+    <h1><%= showGame.title %></h1>
+    <h2><%= showGame.genre %></h2>
+    <h3><%= showGame.console %></h3>
     <li><%= showGame.summary %></li>
+    <br>
+    <form action='/game/<%= showGame._id %>?_method=DELETE' method='POST'>
+        <input type='submit' value='Delete Game'/>
+    </form>
+
 </body>
 </html>

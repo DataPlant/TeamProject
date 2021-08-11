@@ -15,5 +15,15 @@
     <h1 id='title'>Your Favorite Games</h1>
     <br>
     <h2 id='add'><a href='/game/newGame'>Add Game</a></h2>
+    <br>
+    <ul>
+        <% for(let i=0; i<allGame.length; i++){ %>
+            <br>
+            <a href='/game/<%= allGame[i]._id %>'>
+                <h2><%= allGame[i].title %></h2>
+            </a>
+            <h3><%= allGame[i].genre %></h3>
+        <% } %>
+    </ul>
 </body>
 </html>
