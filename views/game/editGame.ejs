@@ -8,12 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/gameStyle.css">
-    <title>Document</title>
+    <title>Edit Game</title>
 </head>
 <body>
     <%- include('../partials/navbar.ejs') %>
-    <h1>GAME NEW PAGE</h1>
-    <form method='POST' action='/game/newGame'>
+    <br>
+    <h1>Editing Game: "<%= foundGame.title %>"</h1>
+    <br>
+    <form method='POST' action='/game/<%= foundGame._id %>?_method=PUT'>
         <label for='title'>Title of Game:</label>
         <input type='text' name='title'>
         <br>

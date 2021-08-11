@@ -35,6 +35,20 @@ router.get('/:id', (req, res) => {
         })
     })
 })
+router.get('/:id/edit', (req, res) => {
+    db.Game.findById(req.params.id, (err, foundGame) => {
+        if(err) return console.log(err);
+        res.render('game/editGame.ejs', {
+            foundGame: foundGame
+        })
+    })
+})
+router.put('/:id', (req, res) =>{
+    db.Game.findByIdAndUpdate(req.params.id, req.body, (err, foundGame) => {
+        if(err) return console.log(err);
+        res.redirect(`${req.params.id}`);
+    })
+})
 router.delete('/:id', (req, res) => {
     db.Game.findByIdAndDelete(req.params.id, (err, deletedGame) => {
         if(err) return console.log(err);
