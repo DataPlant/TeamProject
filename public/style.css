@@ -32,18 +32,33 @@ body {
     align-self: flex-end;
 }
 #games{
+    background-image: url('./images/controller.png');
+    background-position: left;
+    background-size: 15%;
+    background-repeat: no-repeat;
+    text-align: right;
     border: 1px solid black;
     width: 60%;
     height: 50%;
     padding: 2px;
 }
 #movies{
+    background-image: url('./images/movie.png');
+    background-position: left;
+    background-size: 15%;
+    background-repeat: no-repeat;
+    text-align: right;
     border: 1px solid black;
     width: 60%;
     height: 50%;
     padding: 2px;
 }
 #shows{
+    background-image: url('./images/tv.jpg');
+    background-position: left;
+    background-size: 15%;
+    background-repeat: no-repeat;
+    text-align: right;
     border: 1px solid black;
     width: 60%;
     height: 50%;
