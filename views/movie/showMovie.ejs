@@ -7,19 +7,24 @@
     <link rel="stylesheet" href="/showMovieStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <%- include('../partials/navbar.ejs') %>
-    <h1><%= showMovie.title %></h1>
-    <h2><%= showMovie.genre %></h2>
-    <h3><%= showMovie.console %></h3>
-    <li><%= showMovie.summary %></li>
-    <br>
-    <a href='/movie/<%= showMovie._id %>/edit'>Edit Info</a>
-    <form action='/movie/<%= showMovie._id %>?_method=DELETE' method='POST'>
-        <input type='submit' value='Delete Movie'/>
-    </form>
+    <div id='body'>
+        <h1><%= showMovie.title %></h1>
+        <h2>Rating:</h2>
+        <h3><%= showMovie.rating %></h3>
+        <h2>Genre:</h2>
+        <h3><%= showMovie.genre %></h3>
+        <h2>Summary:</h2>
+        <h3><%= showMovie.summary %></h3>
+        <br>
+        <a href='/movie/<%= showMovie._id %>/edit' id='edit'>Edit Info</a>
+        <form action='/movie/<%= showMovie._id %>?_method=DELETE' method='POST'>
+            <input type='submit' value='Delete Movie'/>
+        </form>
+    </div>
 </body>
 </html>

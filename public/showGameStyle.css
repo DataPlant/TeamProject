@@ -1,0 +1,73 @@
+body {
+    background-image:url('./images/gamebg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-color: #363636;
+    margin: 0px;
+    font-family: 'Epilogue', sans-serif;
+}
+nav {
+    color: #D6D6D6;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    background-color: #363636;
+    padding: 5px;
+    border: 2px solid #D2D2D2;
+}
+nav a {
+    text-decoration: none;
+    margin-left: 5px;
+}
+a{
+    color: #D2D2D2;
+}
+a:hover{
+    color: #363636;
+    text-shadow: -1px -1px 0 #8A4DCF, 1px -1px 0 #8A4DCF, -1px 1px 0 #8A4DCF, 1px 1px 0 #8A4DCF;
+}
+#edit:visited{
+    color: #363636;
+}
+a:visited{
+    color: #D2D2D2;
+    border: 2px solid white;
+}
+#body{
+    font-size: 24px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.7);
+    padding: 24px;
+    width: 32%;
+    height: auto;
+    margin-top: 5%;
+    margin-left: 32%;
+    margin-bottom: 25%;
+    color: rgba(1,1,1,0.7);
+}
+input[type='submit']{
+    height: 45px;
+    width: 110px;
+    border-radius: 25%;
+    color: #363636;
+    font-family: 'Epilogue', sans-serif;
+    text-align: center;
+}
+input[type='submit']:hover{
+    cursor: pointer;
+    background-color: #363636;
+    color: #D2D2D2;
+}
+h2{
+    text-decoration: underline;
+    font-size: 28px;
+    text-align: left;
+}
+h3{
+    background: rgba(1,1,1,0.3);
+    padding: 8px;
+    word-wrap: break-word;
+    text-align: left;
+    font-size: 20px;
+}

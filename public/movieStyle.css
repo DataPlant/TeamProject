@@ -5,15 +5,14 @@ body {
     background-size: cover;
     background-color: #363636;
     margin: 0px;
-    font-family: 'Vollkorn SC', serif;
+    font-family: 'Epilogue', sans-serif;
 }
 #title {
-    border: 3px solid black;
     font-weight: 200;
     background-position: center;
     text-align: center;
-    color: rgba(255,255,255,0.7);
-    background-color: rgba(1,1,1,0.8);
+    color: rgba(255,255,255,0.65);
+    background-color: rgba(1,1,1,0.6);
     margin-top: 5%;
     padding: 10px;
     margin-left: 37%;
@@ -43,8 +42,7 @@ a:hover{
     text-shadow: -1px -1px 0 #8A4DCF, 1px -1px 0 #8A4DCF, -1px 1px 0 #8A4DCF, 1px 1px 0 #8A4DCF;
 }
 #add{
-    border: 2px solid black;
-    color: #D2D2D2;
+    color: rgba(255,255,255,0.65);
     background: rgba(1,1,1,0.8);
     font-weight: 100;
     width: 10%;
@@ -95,10 +93,13 @@ input[type='submit']{
     width: 120px;
     border-radius: 25%;
     color: #363636;
-    font-family: 'Vollkorn SC', serif;
+    font-family: 'Epilogue', sans-serif;
 }
 input[type='submit']:hover{
     cursor: pointer;
     background-color: #363636;
     color: #D2D2D2;
+}
+h3{
+    text-align: left;
 }

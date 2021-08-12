@@ -5,7 +5,7 @@ body {
     background-size: cover;
     background-color: #363636;
     margin: 0px;
-    font-family: 'Vollkorn SC', serif;
+    font-family: 'Epilogue', sans-serif;
 }
 #title {
     font-weight: 200;
@@ -90,10 +90,16 @@ input[type='submit']{
     width: 120px;
     border-radius: 25%;
     color: #363636;
-    font-family: 'Vollkorn SC', serif;
+    font-family: 'Epilogue', sans-serif;
 }
 input[type='submit']:hover{
     cursor: pointer;
     background-color: #363636;
     color: #D2D2D2;
+}
+h2{
+    text-align: left;
+}
+h3{
+    text-align: left;
 }

@@ -5,8 +5,7 @@ body {
     background-size: cover;
     background-color: #363636;
     margin: 0px;
-    font-family: 'Vollkorn SC', serif;
-}
+font-family: 'Epilogue', sans-serif;}
 nav {
     color: black;
     font-weight: 400;
@@ -60,8 +59,7 @@ input[type='submit']{
     width: 75px;
     border-radius: 25%;
     color: #363636;
-    font-family: 'Vollkorn SC', serif;
-}
+font-family: 'Epilogue', sans-serif;}
 input[type='submit']:hover{
     cursor: pointer;
     background-color: #363636;
