@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/movieStyle.css">
+    <link rel="stylesheet" href="/newMovieStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -12,25 +12,29 @@
 </head>
 <body>
     <%- include('../partials/navbar.ejs') %>
-    <h1>MOVIE NEW PAGE</h1>
-    <form method='POST' action='/movie/newMovie'>
-        <label for='title'>Title of Movie:</label>
-        <input type='text' name='title'>
+    <div id='body'>
+        <h1 id='header'>Add a Movie</h1>
+        <img id='img' src='../images/movie.png'>
         <br>
         <br>
-        <label for="rating">Rating:</label>
-        <input type="text" name="rating">
-        <br>
-        <br>
-        <label for="genre">Genre:</label>
-        <input type="text" name="genre">
-        <br>
-        <br>
-        <label for="summary">Movie Summary:</label>
-        <input type="text" name="summary">
-        <br>
-        <br>
-        <input type='submit'>
-    </form>
+        <form method='POST' action='/movie/newMovie'>
+            <label for='title'>Title of Movie:</label>
+            <input type='text' name='title'>
+            <br>
+            <label for="rating">Rating:</label>
+            <input type="text" name="rating">
+            <br>
+            <label for="genre">Genre:</label>
+            <input type="text" name="genre">
+            <br>
+            <label for="summary">Movie Summary:</label>
+            <input type="text" name="summary">
+            <br>
+            <label for="moviecover" id='moviecover'>Movie Cover:</label>
+            <input type="text" name="moviecover">
+            <br>
+            <input type='submit'>
+        </form>
+    </div>
 </body>
 </html>

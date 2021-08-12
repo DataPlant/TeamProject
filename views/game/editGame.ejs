@@ -7,32 +7,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/gameStyle.css">
+    <link rel="stylesheet" href="/editGameStyle.css">
     <title>Edit Game</title>
 </head>
 <body>
     <%- include('../partials/navbar.ejs') %>
-    <br>
-    <h1>Editing Game: "<%= foundGame.title %>"</h1>
-    <br>
-    <form method='POST' action='/game/<%= foundGame._id %>?_method=PUT'>
-        <label for='title'>Title of Game:</label>
-        <input type='text' name='title' value='<%= foundGame.title %>'>
+    <div id='body'>
         <br>
-        <br>
-        <label for="console">Console:</label>
-        <input type="text" name="console" value='<%= foundGame.console %>'>
-        <br>
-        <br>
-        <label for="genre">Genre:</label>
-        <input type="text" name="genre" value='<%= foundGame.genre %>'>
-        <br>
-        <br>
-        <label for="summary">Game Summary:</label>
-        <input type="text" name="summary" value='<%= foundGame.summary %>'>
-        <br>
-        <br>
-        <input type='submit'>
-    </form>
+        <h1>Edit: "<%= foundGame.title %>"</h1>
+        <form method='POST' action='/game/<%= foundGame._id %>?_method=PUT'>
+            <label for='title'>New Title of Game:</label>
+            <input type='text' name='title' value='<%= foundGame.title %>'>
+            <br>
+            <label for="console">New Console:</label>
+            <input type="text" name="console" value='<%= foundGame.console %>'>
+            <br>
+            <label for="genre">New Genre:</label>
+            <input type="text" name="genre" value='<%= foundGame.genre %>'>
+            <br>
+            <label for="summary">New Game Summary:</label>
+            <input type="text" name="summary" value='<%= foundGame.summary %>'>
+            <br>
+            <input type='submit'>
+        </form>
+    </div>
 </body>
 </html>

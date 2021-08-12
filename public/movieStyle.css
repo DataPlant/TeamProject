@@ -40,7 +40,7 @@ a{
 }
 a:hover{
     color: #363636;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black ;
+    text-shadow: -1px -1px 0 #8A4DCF, 1px -1px 0 #8A4DCF, -1px 1px 0 #8A4DCF, 1px 1px 0 #8A4DCF;
 }
 #add{
     border: 2px solid black;
@@ -89,4 +89,16 @@ a:visited{
 #movie-info{
     margin-left:1%;
     text-align: center;
+}
+input[type='submit']{
+    height: 30px;
+    width: 120px;
+    border-radius: 25%;
+    color: #363636;
+    font-family: 'Vollkorn SC', serif;
+}
+input[type='submit']:hover{
+    cursor: pointer;
+    background-color: #363636;
+    color: #D2D2D2;
 }
