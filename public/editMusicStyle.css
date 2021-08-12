@@ -1,5 +1,5 @@
 body {
-    background-image:url('./images/gamebg.jpg');
+    background-image:url('./images/musicbg.jpg');
     background-position: center;
     background-repeat: no-repeat;  
     background-size: cover;
@@ -54,13 +54,14 @@ input[type='text']{
     width: 65%;
     height: 35px;
     background-color: rgba(255,255,255,0.7);
+    font-family: 'Vollkorn SC', serif;
+    text-align: center;
 }
 input[type='submit']{
     height: 45px;
     width: 75px;
     border-radius: 25%;
     color: #363636;
-    font-family: 'Vollkorn SC', serif;
 }
 input[type='submit']:hover{
     cursor: pointer;

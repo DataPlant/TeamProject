@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/musicStyle.css">
+    <link rel="stylesheet" href="/editMusicStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -12,27 +12,27 @@
 </head>
 <body>
     <%- include('../partials/navbar.ejs') %>
-    <br>
-    <h1>Editing Music: "<%= foundMusic.title %>"</h1>
-    <br>
-    <form method='POST' action='/music/<%= foundMusic._id %>?_method=PUT'>
-        <label for='title'>Title of Music:</label>
-        <input type='text' name='title' value='<%= foundMusic.title %>'>
+    <div id='body'>
         <br>
-        <br>
-        <label for="console">Console:</label>
-        <input type="text" name="console" value='<%= foundMusic.console %>'>
-        <br>
-        <br>
-        <label for="genre">Genre:</label>
-        <input type="text" name="genre" value='<%= foundMusic.genre %>'>
-        <br>
-        <br>
-        <label for="summary">Music Summary:</label>
-        <input type="text" name="summary" value='<%= foundMusic.summary %>'>
-        <br>
-        <br>
-        <input type='submit'>
-    </form>
+        <h1>Edit: "<%= foundMusic.title %>"</h1>
+        <form method='POST' action='/music/<%= foundMusic._id %>?_method=PUT'>
+            <label for='title'>New Song Title:</label>
+            <input type='text' name='title' value='<%= foundMusic.title %>'>
+            <br>
+            <label for="artist">New Artist:</label>
+            <input type="text" name="artist" value='<%= foundMusic.artist %>'>
+            <br>
+            <label for="genre">New Genre:</label>
+            <input type="text" name="genre" value='<%= foundMusic.genre %>'>
+            <br>
+            <label for="link">New Song link:</label>
+            <input type="text" name="link" value='<%= foundMusic.link %>'>
+            <br>
+            <label for="musiccover" id='musiccover'>New Album Cover:</label>
+            <input type="text" name="musiccover">
+            <br>
+            <input type='submit'>
+        </form>
+    </div>
 </body>
 </html>

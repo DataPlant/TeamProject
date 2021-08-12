@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/movieStyle.css">
+    <link rel="stylesheet" href="/editMovieStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -12,27 +12,27 @@
 </head>
 <body>
     <%- include('../partials/navbar.ejs') %>
-    <br>
-    <h1>Editing Movie: "<%= foundMovie.title %>"</h1>
-    <br>
-    <form method='POST' action='/movie/<%= foundMovie._id %>?_method=PUT'>
-        <label for='title'>Title of Movie:</label>
-        <input type='text' name='title' value='<%= foundMovie.title %>'>
+    <div id='body'>
         <br>
-        <br>
-        <label for="console">Console:</label>
-        <input type="text" name="console" value='<%= foundMovie.console %>'>
-        <br>
-        <br>
-        <label for="genre">Genre:</label>
-        <input type="text" name="genre" value='<%= foundMovie.genre %>'>
-        <br>
-        <br>
-        <label for="summary">Movie Summary:</label>
-        <input type="text" name="summary" value='<%= foundMovie.summary %>'>
-        <br>
-        <br>
-        <input type='submit'>
-    </form>
+        <h1>Edit: "<%= foundMovie.title %>"</h1>
+        <form method='POST' action='/movie/<%= foundMovie._id %>?_method=PUT'>
+            <label for='title'> New Title of Movie:</label>
+            <input type='text' name='title' value='<%= foundMovie.title %>'>
+            <br>
+            <label for="rating"> New Rating:</label>
+            <input type="text" name="rating" value='<%= foundMovie.rating %>'>
+            <br>
+            <label for="genre">Genre:</label>
+            <input type="text" name="genre" value='<%= foundMovie.genre %>'>
+            <br>
+            <label for="summary"> New Movie Summary:</label>
+            <input type="text" name="summary" value='<%= foundMovie.summary %>'>
+            <br>
+            <label for="moviecover" id='moviecover'> New Movie Cover:</label>
+            <input type="text" name="moviecover">
+            <br>
+            <input type='submit'>
+        </form>
+    </div>
 </body>
 </html>
