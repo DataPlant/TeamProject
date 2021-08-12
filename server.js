@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express');
 const app = express();
 const methodOverride = require('method-override');
@@ -22,6 +23,6 @@ app.use('/music', musicRoutes);
 app.use('/movie', movieRoutes);
 app.use('/tv-show', tvRoutes);
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 4000, () => {
     console.log(`Running on localhost:${PORT}`);
   });
