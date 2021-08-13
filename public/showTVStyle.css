@@ -34,7 +34,14 @@ a:hover{
     color: white;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
+ul{
+    list-style-type: none;
+    display: inline;
+}
 #edit:visited{
+    color: #363636;
+}
+#back:visited{
     color: #363636;
 }
 a:visited{
@@ -81,6 +88,27 @@ h3{
     text-align: left;
     font-size: 20px;
 }
+#back{
+    display: grid;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    height: 15px;
+    width: 85px;
+    text-align: center;
+    border-radius: 25%;
+    color: #363636;
+    border: 2px solid rgba(1,1,1,0.7);
+    padding: 9px;
+    position: absolute;
+    background: rgba(255,255,255,0.7);
+    margin-top: 0.3%;
+}
+#back:hover{
+    cursor: pointer;
+    background-color: #363636;
+    color: #D2D2D2;
+}
 #edit{
     font-weight: 400;
     font-size: 16px;
@@ -91,19 +119,23 @@ h3{
     border-radius: 25%;
     color: #363636;
     border: 2px solid rgba(1,1,1,0.7);
-    padding: 8px;
-    margin-left: 0%;
-    margin-top: 5px;
+    padding: 9px;
     position: absolute;
     background: rgba(255,255,255,0.7);
+    margin-left: 9%;
+    margin-top: 0.5%;
 }
 #edit:hover{
     cursor: pointer;
     background-color: #363636;
     color: #D2D2D2;
 }
+#delete:hover{
+    background: maroon;
+    color: black;
+    font-weight: 800;
+}
 #delete{
     position: relative;
-    margin-right: 30%;
     letter-spacing: 1px;
 }
