@@ -7,30 +7,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/tvStyle.css">
+    <link rel="stylesheet" href="/editTVStyle.css">
     <title>Document</title>
 </head>
 <body>
     <%- include('../partials/navbar.ejs') %>
+    <div id='header'>
+        <h1>Edit: </h1>
+        <h1 id='tvTitle'>"<%= foundTV.title %>"</h1>
+    </div>
     <div id='body'>
         <br>
-        <h1>Edit: "<%= foundTV.title %>"</h1>
         <form method='POST' action='/movie/<%= foundTV._id %>?_method=PUT'>
             <label for='title'> New Title of Show:</label>
+            <br>
+            <br>
             <input type='text' name='title' value='<%= foundTV.title %>'>
             <br>
             <label for="rating"> New Rating:</label>
+            <br>
+            <br>
             <input type="text" name="rating" value='<%= foundTV.rating %>'>
             <br>
             <label for="genre">Genre:</label>
+            <br>
+            <br>
             <input type="text" name="genre" value='<%= foundTV.genre %>'>
             <br>
             <label for="summary"> New Show Summary:</label>
+            <br>
+            <br>
             <input type="text" name="summary" value='<%= foundTV.summary %>'>
             <br>
             <label for="tvcover" id='tvcover'> New TV Cover:</label>
+            <br>
+            <br>
             <input type="text" name="tvcover">
             <br>
+            <a href='/tv-show' id='back'> Back To All </a> 
             <input type='submit'>
         </form>
     </div>

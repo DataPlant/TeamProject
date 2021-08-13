@@ -20,11 +20,18 @@
     <h3><%= showGame.console %></h3>
     <h2>Summary: </h2>
     <h3><%= showGame.summary %></h3>
-    <a href='/game/<%= showGame._id %>/edit' id='edit'>Edit Info</a>
-    <br>
-    <form action='/game/<%= showGame._id %>?_method=DELETE' method='POST'>
-        <input type='submit' value='Delete Game' id='delete'>
-    </form>
+    <ul id='allButtons'>
+        <li> 
+            <a href='/game' id='back'> Back To All </a> </li>
+        <li>
+         <a href='/game/<%= showGame._id %>/edit' id='edit'>Edit Info</a>
+         </li>
+         <li>
+             <form action='/game/<%= showGame._id %>?_method=DELETE' method='POST'>
+                 <input type='submit' value='Delete Game'id='delete'>
+             </form>
+        </li>
+     </ul>
 </div>
 </body>
 </html>

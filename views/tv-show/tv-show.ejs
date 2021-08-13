@@ -12,13 +12,13 @@
 </head>
 <body>
     <%- include('../partials/navbar.ejs') %>
-    <h1 id='title'>Your Favorite TV Shows</h1>
+    <h1 id='title'>TV Shows</h1>
     <br>
-    <h2 id='add'><a href='/tv-show/newTV'>Add TV Show</a></h2>
+    <h2 id='add'><a href='/tv-show/newTV' id='addtv'>Add TV Show</a></h2>
     <br>
     <% for(let i=0; i<allTV.length; i++){ %>
-        <ul id='tvshow'>
-            <div id='tvshow'>
+        <ul id='tv-show'>
+            <div id='tvshow-info'>
             <br>
             <a href='/tv-show/<%= allTV[i]._id %>'>
                 <h2><%= allTV[i].title %></h2>

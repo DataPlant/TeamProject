@@ -12,22 +12,33 @@
 </head>
 <body>
     <%- include('../partials/navbar.ejs') %>
+    <div id='header'>
+        <h1>Edit:</h1>
+        <h1 id='gameTitle'>"<%= foundGame.title %>"</h1>
+    </div>
     <div id='body'>
-        <br>
-        <h1>Edit: "<%= foundGame.title %>"</h1>
         <form method='POST' action='/game/<%= foundGame._id %>?_method=PUT'>
             <label for='title'>New Title of Game:</label>
+            <br>
+            <br>
             <input type='text' name='title' value='<%= foundGame.title %>'>
             <br>
             <label for="console">New Console:</label>
+            <br>
+            <br>
             <input type="text" name="console" value='<%= foundGame.console %>'>
             <br>
             <label for="genre">New Genre:</label>
+            <br>
+            <br>
             <input type="text" name="genre" value='<%= foundGame.genre %>'>
             <br>
             <label for="summary">New Game Summary:</label>
+            <br>
+            <br>
             <input type="text" name="summary" value='<%= foundGame.summary %>'>
             <br>
+            <a href='/game' id='back'> Back To All </a> 
             <input type='submit'>
         </form>
     </div>
