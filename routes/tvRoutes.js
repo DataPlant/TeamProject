@@ -17,9 +17,9 @@ router.post('/newTV', (req, res) => {
     console.log(req.body);
     let data = {
         title: req.body.title,
-        artist: req.body.artist,
+        rating: req.body.rating,
+        summary: req.body.summary,
         genre: req.body.genre,
-        link: req.body.link,
     };
     db.TVShow.create(data, (err, createdTV) => {
         if(err) return console.log(err);
@@ -50,7 +50,7 @@ router.put('/:id', (req, res) =>{
     })
 })
 router.delete('/:id', (req, res) => {
-    db.TVShow.findByIdAndDelete(req.params.id, (err, deletedMusic) => {
+    db.TVShow.findByIdAndDelete(req.params.id, (err, deletedTV) => {
         if(err) return console.log(err);
         res.redirect('/tv-show')
     })
