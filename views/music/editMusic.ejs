@@ -12,23 +12,36 @@
 </head>
 <body>
     <%- include('../partials/navbar.ejs') %>
+    <div id='header'>
+        <h1>Edit:</h1>
+        <h1 id='musicTitle'>"<%= foundMusic.title %>"</h1>
+    </div>
     <div id='body'>
         <br>
-        <h1>Edit: "<%= foundMusic.title %>"</h1>
         <form method='POST' action='/music/<%= foundMusic._id %>?_method=PUT'>
             <label for='title'>New Song Title:</label>
+            <br>
+            <br>
             <input type='text' name='title' value='<%= foundMusic.title %>'>
             <br>
             <label for="artist">New Artist:</label>
+            <br>
+            <br>
             <input type="text" name="artist" value='<%= foundMusic.artist %>'>
             <br>
             <label for="genre">New Genre:</label>
+            <br>
+            <br>
             <input type="text" name="genre" value='<%= foundMusic.genre %>'>
             <br>
             <label for="link">New Song link:</label>
+            <br>
+            <br>
             <input type="text" name="link" value='<%= foundMusic.link %>'>
             <br>
             <label for="musiccover" id='musiccover'>New Album Cover:</label>
+            <br>
+            <br>
             <input type="text" name="musiccover">
             <br>
             <input type='submit'>

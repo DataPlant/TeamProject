@@ -6,28 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
-    <title>Document</title>
+    <title>EHub.</title>
 </head>
 <body>
-    <%- include('./partials/navbar.ejs') %>
     <div id='title'>
-        <h1>The Place For All Your Favorites</h1>
-        <p>Catalogue your favorite music, movies, TV shows, and video games!</p>
+        <h1 id='ehub'>EHub.</h1>
     </div>
-        <div id='music-category'>
-            <h2 id='music'> <a href='./music'> Music </a></h2>
-        </div>
+    <br>
+    <p>A place to catalogue your favorite music, movies, TV shows, and video games.</p>
     <div id='categories'>
+        <div id='music-category'>
+            <a href='./music' id='music-link'><img src='/images/musicrmbg.png'></a>
+        </div>
         <div id='movie-category'>
-            <h2 id='movies'> <a href='./movie'> Movies </a></h2>
+            <a href='./movie' id='movie-link'><img src='/images/moviermbg.png'></a>
         </div>
         <div id='game-category'>
-            <h2 id='games'> <a href='./game'> Video Games </a></h2>
+            <a href='./game' id='game-link'><img src='/images/gamermbg.png'></a>
         </div>
         <div id='tv-category'>
-            <h2 id='tv-shows'> <a href='./tv-show'> TV Shows </a></h2>
+            <a href='./tv-show' id='tv-link'><img src='/images/tvrmbg.png'></a>
         </div>
     </div>
 </body>

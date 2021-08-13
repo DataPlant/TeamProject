@@ -12,23 +12,36 @@
 </head>
 <body>
     <%- include('../partials/navbar.ejs') %>
+    <div id='header'>
+        <h1>Edit:</h1>
+        <h1 id='movieTitle'>"<%= foundMovie.title %>"</h1>
+    </div>
     <div id='body'>
         <br>
-        <h1>Edit: "<%= foundMovie.title %>"</h1>
         <form method='POST' action='/movie/<%= foundMovie._id %>?_method=PUT'>
             <label for='title'> New Title of Movie:</label>
+            <br>
+            <br>
             <input type='text' name='title' value='<%= foundMovie.title %>'>
             <br>
             <label for="rating"> New Rating:</label>
+            <br>
+            <br>
             <input type="text" name="rating" value='<%= foundMovie.rating %>'>
             <br>
             <label for="genre">Genre:</label>
+            <br>
+            <br>
             <input type="text" name="genre" value='<%= foundMovie.genre %>'>
             <br>
             <label for="summary"> New Movie Summary:</label>
+            <br>
+            <br>
             <input type="text" name="summary" value='<%= foundMovie.summary %>'>
             <br>
             <label for="moviecover" id='moviecover'> New Movie Cover:</label>
+            <br>
+            <br>
             <input type="text" name="moviecover">
             <br>
             <input type='submit'>
