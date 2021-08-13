@@ -14,6 +14,24 @@
     <%- include('../partials/navbar.ejs') %>
     <h1 id='title'>Your Favorite TV Shows</h1>
     <br>
-    <h2 id='add'><a href=''>Add TV Show</a></h2>
+    <h2 id='add'><a href='/tv-show/newTV'>Add TV Show</a></h2>
+    <br>
+    <% for(let i=0; i<allTV.length; i++){ %>
+        <ul id='tvshow'>
+            <div id='tvshow'>
+            <br>
+            <a href='/tv-show/<%= allTV[i]._id %>'>
+                <h2><%= allTV[i].title %></h2>
+            </a>
+            <h3><%= allTV[i].genre %></h3>
+        </div>
+        <div id='allButtons'>
+            <a href='/tv-show/<%= allTV[i]._id %>/edit' id='edit'>Edit Info</a>
+            <form action='/tv-show/<%= allTV[i]._id %>?_method=DELETE' method='POST'>
+                <input type='submit' value='Delete Show'id='delete'>
+            </form>
+        </div>
+        </ul>
+        <% } %>
 </body>
 </html>

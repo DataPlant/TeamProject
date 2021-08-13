@@ -20,5 +20,6 @@ module.exports = {
     Game: require('./Game.js'),
     Movie: require('./Movie.js'),
     Music: require('./Music.js'),
+    TVShow: require('./TVShow.js'),
 }
 
