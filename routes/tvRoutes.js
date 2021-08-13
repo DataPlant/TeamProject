@@ -17,9 +17,9 @@ router.post('/newTV', (req, res) => {
     console.log(req.body);
     let data = {
         title: req.body.title,
-        artist: req.body.artist,
+        rating: req.body.rating,
         genre: req.body.genre,
-        link: req.body.link,
+        summary: req.body.summary,
     };
     db.TVShow.create(data, (err, createdTV) => {
         if(err) return console.log(err);
