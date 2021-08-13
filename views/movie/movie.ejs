@@ -13,9 +13,9 @@
 </head>
 <body>
     <%- include('../partials/navbar.ejs') %>
-    <h1 id='title'>Your Favorite Movies</h1>
+    <h1 id='title'>Movies</h1>
     <br>
-    <h2 id='add'><a href='/movie/newMovie'>Add Movie</a></h2>
+    <h2 id='add'><a href='/movie/newMovie' id='newmovie'>Add Movie</a></h2>
     <br>
     <% for(let i=0; i<allMovie.length; i++){ %>
         <ul id='movie'>
@@ -27,9 +27,9 @@
             <h3><%= allMovie[i].genre %></h3>
         </div>
         <div id='allButtons'>
-            <a href='/movie/<%= allMovie[i]._id %>/edit'>Edit Info</a>
+            <a href='/movie/<%= allMovie[i]._id %>/edit' id='edit'>Edit Info</a>
             <form action='/movie/<%= allMovie[i]._id %>?_method=DELETE' method='POST'>
-                <input type='submit' value='Delete Movie'/>
+                <input type='submit' value='Delete Movie'id='delete'>
             </form>
         </div>
         </ul>

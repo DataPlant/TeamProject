@@ -13,7 +13,7 @@
 <body>
     <%- include('../partials/navbar.ejs') %>
     <div id='body'>
-    <h1><%= showGame.title %></h1>
+    <h1 id='title'><%= showGame.title %></h1>
     <h2>Genre: </h2>
     <h3><%= showGame.genre %></h3>
     <h2>Console: </h2>
@@ -23,7 +23,7 @@
     <a href='/game/<%= showGame._id %>/edit' id='edit'>Edit Info</a>
     <br>
     <form action='/game/<%= showGame._id %>?_method=DELETE' method='POST'>
-        <input type='submit' value='Delete Game'/>
+        <input type='submit' value='Delete Game' id='delete'>
     </form>
 </div>
 </body>

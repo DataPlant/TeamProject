@@ -7,30 +7,34 @@ body {
     margin: 0px;
     font-family: 'Epilogue', sans-serif;
 }
+#title{
+    letter-spacing: 5px;
+}
 nav {
-    color: #D6D6D6;
-    font-weight: 400;
+    color: black;
+    font-weight: 300;
     display: flex;
     justify-content: space-between;
-    background-color: #363636;
+    background-color: rgba(12, 12, 12, 1);
     padding: 5px;
     border: 2px solid #D2D2D2;
+    letter-spacing: 2px;
+}
+#nav:visited{
+    color: #363636;
 }
 nav a {
     text-decoration: none;
     margin-left: 5px;
 }
 a{
-    color: #D2D2D2;
+    color: rgba(255,255,255,0.9);
 }
 a:hover{
-    color: #363636;
-    text-shadow: -1px -1px 0 #8A4DCF, 1px -1px 0 #8A4DCF, -1px 1px 0 #8A4DCF, 1px 1px 0 #8A4DCF;
+    color: white;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 #edit:visited{
-    color: #363636;
-}
-#link:visited{
     color: #363636;
 }
 a:visited{
@@ -56,6 +60,7 @@ input[type='submit']{
     color: #363636;
     font-family: 'Epilogue', sans-serif;
     text-align: center;
+    font-weight: 500;
 }
 input[type='submit']:hover{
     cursor: pointer;
@@ -66,11 +71,39 @@ h2{
     text-decoration: underline;
     font-size: 28px;
     text-align: left;
+    letter-spacing: 2px;
 }
 h3{
+    letter-spacing: 1px;
     background: rgba(1,1,1,0.3);
     padding: 8px;
     word-wrap: break-word;
     text-align: left;
     font-size: 20px;
+}
+#edit{
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    height: 15px;
+    width: 85px;
+    text-align: center;
+    border-radius: 25%;
+    color: #363636;
+    border: 2px solid rgba(1,1,1,0.7);
+    padding: 8px;
+    margin-left: 0%;
+    margin-top: 5px;
+    position: absolute;
+    background: rgba(255,255,255,0.7);
+}
+#edit:hover{
+    cursor: pointer;
+    background-color: #363636;
+    color: #D2D2D2;
+}
+#delete{
+    position: relative;
+    margin-right: 30%;
+    letter-spacing: 1px;
 }

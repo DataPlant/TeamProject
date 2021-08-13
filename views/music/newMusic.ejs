@@ -12,25 +12,35 @@
 </head>
 <body>
     <%- include('../partials/navbar.ejs') %>
+    <h1 id='header'>Add A Song</h1>
     <div id='body'>
-        <h1>Add A Song</h1>
         <img src='../images/record.png' id='img'>
         <br>
         <br>
         <form method='POST' action='/music/newMusic'>
             <label for='title'>Song Title:</label>
+            <br>
+            <br>
             <input type='text' name='title'>
             <br>
             <label for="artist">Artist:</label>
+            <br>
+            <br>
             <input type="text" name="artist">
             <br>
             <label for="genre">Genre:</label>
+            <br>
+            <br>
             <input type="text" name="genre">
             <br>
             <label for="link">Song Link:</label>
+            <br>
+            <br>
             <input type="text" name="link">
             <br>
             <label for="musiccover" id='musiccover'>Album Cover:</label>
+            <br>
+            <br>
             <input type="text" name="musiccover">
             <br>
             <input type='submit'>

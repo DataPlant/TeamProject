@@ -17,9 +17,9 @@ router.post('/newMovie', (req, res) => {
     console.log(req.body);
     let data = {
         title: req.body.title,
-        console: req.body.console,
-        summary: req.body.summary,
+        rating: req.body.rating,
         genre: req.body.genre,
+        summary: req.body.summary,
     };
     db.Movie.create(data, (err, createdMovie) => {
         if(err) return console.log(err);
