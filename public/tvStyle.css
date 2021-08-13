@@ -1,32 +1,35 @@
 body {
     background-image:url('./images/tvbg.jpg');
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;  
     background-size: cover;
     background-color: #363636;
     margin: 0px;
     font-family: 'Epilogue', sans-serif;
+    margin-bottom: 45%;
 }
 #title {
-    border: 3px solid black;
     font-weight: 200;
     background-position: center;
     text-align: center;
     color: rgba(255,255,255,0.7);
     background-color: rgba(1,1,1,0.8);
-    margin-top: 5%;
-    padding: 10px;
-    margin-left: 37%;
-    width: 28%;
+    margin-top: 6%;
+    padding: 35px;
+    margin-left: 0%;
+    width: 100%;
+    font-size:45px;
+    letter-spacing: 10px;
 }
 nav {
     color: black;
-    font-weight: 400;
+    font-weight: 300;
     display: flex;
     justify-content: space-between;
-    background-color: #363636;
+    background-color: rgba(12, 12, 12, 1);
     padding: 5px;
     border: 2px solid #D2D2D2;
+    letter-spacing: 2px;
 }
 #nav:visited{
     color: #363636;
@@ -35,32 +38,113 @@ nav a {
     text-decoration: none;
     margin-left: 5px;
 }
-
+a{
+    color: rgba(255,255,255,0.9);
+}
 a:hover{
-    color: #363636;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black ;
+    color: white;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+#addtv{
+    text-decoration: none;
 }
 #add{
-    border: 2px solid black;
+    letter-spacing: 2px;
+    background-color: rgba(1,1,1,0.8);
     color: #D2D2D2;
-    background: rgba(1,1,1,0.8);
-    font-weight: 100;
+    font-weight: 200;
     width: 10%;
     text-align: center;
     padding: 10px;
     font-size: 18px;
-    margin-left: 3%; 
+    margin-left: 45%; 
 }
 #add:hover{
-    border: 2px solid white;
-    background: #363636;
-    color: white;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-}
-a:hover{
-    text-shadow: -1px -1px 0 #8A4DCF, 1px -1px 0 #8A4DCF, -1px 1px 0 #8A4DCF, 1px 1px 0 #8A4DCF;
+    background-color: black;
+    text-shadow: white;
+    color: #737373;
+    font-weight: 400;
 }
 a:visited{
     color: #D2D2D2;
     border: 2px solid white;
+}
+#allButtons{
+    font-size: 24px;
+    margin-right: 6%;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+#tv{
+    color: #D2D2D2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(1,1,1,0.8);
+    margin-left: 10%;
+    width: 75%;
+    text-decoration: none;
+}
+#tv{
+    color: rgba(255,255,255,0.7);
+}
+#tv:visited{
+    color: #363636;
+    text-decoration: none;
+}
+#tv-info{
+    margin-left:1%;
+    text-align: center;
+}
+input[type='submit']{
+    height: 35px;
+    width: 120px;
+    border-radius: 30%;
+    background-color: rgba(44, 44, 46, 0.7);
+    color: #D2D2D2;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    border: 1px solid white;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+}
+input[type='submit']:hover{
+    cursor: pointer;
+    color: #363636;
+    text-shadow: none;
+    background: rgba(255,255,255,0.7);
+}
+h2{
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+h2:hover{
+    text-shadow: black;
+    font-weight: 500;
+}
+h3{
+    font-weight: 200;
+    text-align: left;
+}
+#edit{
+    border-radius: 30%;
+    background-color: rgba(44, 44, 46, 0.7);
+    color: #D2D2D2;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    border: 1px solid white;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 8px;
+}
+#edit:hover{
+    cursor: pointer;
+    color: #363636;
+    text-shadow: none;
+    background: rgba(255,255,255,0.7);
+}
+#delete{
+    margin-top: 18px;
+    letter-spacing: 1px;
 }

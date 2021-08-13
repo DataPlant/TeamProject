@@ -5,8 +5,8 @@ body {
     background-size: cover;
     background-color: #363636;
     margin: 0px;
-font-family: 'Epilogue', sans-serif;}
-nav {
+    font-family: 'Epilogue', sans-serif;}
+    nav {
     color: black;
     font-weight: 400;
     display: flex;
@@ -14,6 +14,16 @@ nav {
     background-color: #363636;
     padding: 5px;
     border: 2px solid #D2D2D2;
+}
+nav {
+    color: black;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(12, 12, 12, 1);
+    padding: 5px;
+    border: 2px solid #D2D2D2;
+    letter-spacing: 2px;
 }
 #nav:visited{
     color: #363636;
@@ -23,44 +33,61 @@ nav a {
     margin-left: 5px;
 }
 a{
-    color: #D2D2D2;
+    color: rgba(255,255,255,0.9);
 }
 a:hover{
-    color: #363636;
-    text-shadow: -1px -1px 0 #8A4DCF, 1px -1px 0 #8A4DCF, -1px 1px 0 #8A4DCF, 1px 1px 0 #8A4DCF;
-}
-a:visited{
-    color: #D2D2D2;
-    border: 2px solid white;
+    color: white;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 #img{
-    width: 20%;
+    padding: 10px;
+    margin-left: 29%;
+    width: 40%;
+}
+#header{
+    font-weight: 200;
+    background: linear-gradient(to right, rgba(1,1,1,0.5), rgba(1,1,1,0.7), rgba(1,1,1,0.9) );
+    font-size:80px;
+    letter-spacing: 20px;
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    padding: 30px;
+}
+label{
+    color: rgba(255,255,255,0.9);
+    letter-spacing: 2px;
 }
 #body{
     font-size: 25px;
-    text-align: center;
-    background-color: rgba(255,255,255,0.7);
+    text-align: left;
+    background-color: rgb(100, 100, 100,0.7);
     padding: 24px;
     width: 32%;
     height: auto;
     margin-top: 5%;
-    margin-left: 32%;
+    margin-left: 32.5%;
     margin-bottom: 25%;
 }
 input[type='text']{
     display: flex;
     margin-left: 18%;
-    width: 65%;
+    width: 100%;
     height: 35px;
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.8);
+    margin-left: 0%;
 }
 input[type='submit']{
-    height: 45px;
-    width: 75px;
+    height: 55px;
+    width: 85px;
     border-radius: 25%;
-    color: #363636;
-font-family: 'Epilogue', sans-serif;}
-input[type='submit']:hover{
+    color: rgba(1,1,1,0.7);
+    font-family: 'Epilogue', sans-serif;
+    display:flex;
+    justify-content: center;
+    margin-left: 40%;
+    font-size: 17px;
+}
+    input[type='submit']:hover{
     cursor: pointer;
     background-color: #363636;
     color: #D2D2D2;

@@ -17,9 +17,9 @@ router.post('/newMusic', (req, res) => {
     console.log(req.body);
     let data = {
         title: req.body.title,
-        console: req.body.console,
-        summary: req.body.summary,
+        artist: req.body.artist,
         genre: req.body.genre,
+        link: req.body.link,
     };
     db.Music.create(data, (err, createdMusic) => {
         if(err) return console.log(err);

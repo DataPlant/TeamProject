@@ -13,7 +13,7 @@
 <body>
     <%- include('../partials/navbar.ejs') %>
     <div id='body'>
-        <h1><%= showMovie.title %></h1>
+        <h1 id='title'><%= showMovie.title %></h1>
         <h2>Rating:</h2>
         <h3><%= showMovie.rating %></h3>
         <h2>Genre:</h2>
@@ -23,7 +23,7 @@
         <br>
         <a href='/movie/<%= showMovie._id %>/edit' id='edit'>Edit Info</a>
         <form action='/movie/<%= showMovie._id %>?_method=DELETE' method='POST'>
-            <input type='submit' value='Delete Movie'/>
+            <input type='submit' value='Delete Movie'id='delete'>
         </form>
     </div>
 </body>
