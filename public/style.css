@@ -6,7 +6,7 @@ body {
     background-color: white;
     margin: 0px;
     font-family: 'Epilogue', sans-serif;
-    margin-bottom: 20%;
+    margin-bottom: 23%;
 }
 #ehub{
     color: rgba(1,1,1,0.85);
@@ -80,6 +80,7 @@ body {
     margin-left: 23%;
     margin-top: 3%;
     padding: 33px;
+    
 }
 #movie-link{
     display: flex;
@@ -114,7 +115,9 @@ p {
     background: linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0.7), rgba(255,255,255,0.9) );
     font-style: italic;
     text-align: center;
-    padding: 10px;
+    padding: 13px;
+    font-size: 17px;
+    letter-spacing: 5px;
 }
 a:hover{
     color: white;
