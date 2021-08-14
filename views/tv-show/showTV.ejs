@@ -7,32 +7,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel='stylesheet', href='/js/bootstrap.bundle.js'>
+    <link rel='stylesheet', href='/js/jquery-migrate-3.3.2.min.js'>
+    <link rel='stylesheet', href='/js/bootstrap.bundle.min.js'>
+    <link rel='stylesheet', href='/js/bootstrap.js'>
+    <link rel='stylesheet', href='/js/bootstrap.min.js'>
+    <link rel='stylesheet', href='/js/bootstrap.bundle.js.map'>
+    <link rel='stylesheet', href='/js/bootstrap.bundle.min.js.map'>
+    <link rel='stylesheet', href='/js/bootstrap.js.map'>
+    <link rel='stylesheet', href='/js/bootstrap.min.js.map'>
+    <link rel='stylesheet', href='/css/bootstrap-grid.css'>
+    <link rel='stylesheet', href='/css/bootstrap-grid.css.map'>
+    <link rel='stylesheet', href='/css/bootstrap-grid.min.css'>
+    <link rel='stylesheet', href='/css/bootstrap-grid.min.css.map'>
+    <link rel='stylesheet', href='/css/bootstrap-reboot.css'>
+    <link rel='stylesheet', href='/css/bootstrap-reboot.css.map'>
+    <link rel='stylesheet', href='/css/bootstrap-reboot.min.css'>
+    <link rel='stylesheet', href='/css/bootstrap-reboot.min.css.map'>
+    <link rel='stylesheet', href='/css/bootstrap.css'>
+    <link rel='stylesheet', href='/css/bootstrap.css.map'>
+    <link rel='stylesheet', href='/css/bootstrap.min.css'>
+    <link rel='stylesheet', href='/css/bootstrap.min.css.map'>
     <link rel="stylesheet" href="/showTVStyle.css">
-    <title>Document</title>
+    <title>Show TV</title>
 </head>
 <body>
     <%- include('../partials/navbar.ejs') %>
     <div id='body'>
-        <h1 id='title'><%= showTV.title %></h1>
-        <h2>Rating:</h2>
-        <h3><%= showTV.rating %></h3>
-        <h2>Genre:</h2>
-        <h3><%= showTV.genre %></h3>
-        <h2>Summary:</h2>
-        <h3><%= showTV.summary %></h3>
-        <br>
-        <ul id='allButtons'>
-           <li> 
-               <a href='/tv-show' id='back'> Back To All </a> </li>
-           <li>
-            <a href='/tv-show/<%= showTV._id %>/edit' id='edit'>Edit Info</a>
-            </li>
-            <li>
-                <form action='/tv-show/<%= showTV._id %>?_method=DELETE' method='POST'>
-                    <input type='submit' value='Delete TV Show'id='delete'>
-                </form>
-                </li>
-        </ul>
+    <h1 id='title'><%= showTV.title %></h1>
+    <h2>Rating: </h2>
+    <h3><%= showTV.rating %></h3>
+    <h2>Genre: </h2>
+    <h3><%= showTV.genre %></h3>
+    <h2>Summary: </h2>
+    <h3><%= showTV.summary %></h3>
+    <br>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Options
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class='dropdown-item' href='/tv-show'id='back'> Go Back </a>
+            <a class='dropdown-item' href="/tv-show/<%= showTV._id %>/edit" id='edit'>Edit tv</a>
+            <form action='/tv-show/<%= showTV._id %>?_method=DELETE' method='POST' class='dropdown-item'id='deleteform'>
+            <input type='submit' value='Delete tv' id='delete'>
+            </form>
+        </div>
+        </div>
     </div>
 </body>
 </html>

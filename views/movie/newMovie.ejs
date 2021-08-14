@@ -4,6 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel='stylesheet', href='/js/bootstrap.bundle.js'>
+    <link rel='stylesheet', href='/js/jquery-migrate-3.3.2.min.js'>
+    <link rel='stylesheet', href='/js/bootstrap.bundle.min.js'>
+    <link rel='stylesheet', href='/js/bootstrap.js'>
+    <link rel='stylesheet', href='/js/bootstrap.min.js'>
+    <link rel='stylesheet', href='/js/bootstrap.bundle.js.map'>
+    <link rel='stylesheet', href='/js/bootstrap.bundle.min.js.map'>
+    <link rel='stylesheet', href='/js/bootstrap.js.map'>
+    <link rel='stylesheet', href='/js/bootstrap.min.js.map'>
+    <link rel='stylesheet', href='/css/bootstrap-grid.css'>
+    <link rel='stylesheet', href='/css/bootstrap-grid.css.map'>
+    <link rel='stylesheet', href='/css/bootstrap-grid.min.css'>
+    <link rel='stylesheet', href='/css/bootstrap-grid.min.css.map'>
+    <link rel='stylesheet', href='/css/bootstrap-reboot.css'>
+    <link rel='stylesheet', href='/css/bootstrap-reboot.css.map'>
+    <link rel='stylesheet', href='/css/bootstrap-reboot.min.css'>
+    <link rel='stylesheet', href='/css/bootstrap-reboot.min.css.map'>
+    <link rel='stylesheet', href='/css/bootstrap.css'>
+    <link rel='stylesheet', href='/css/bootstrap.css.map'>
+    <link rel='stylesheet', href='/css/bootstrap.min.css'>
+    <link rel='stylesheet', href='/css/bootstrap.min.css.map'>
     <link rel="stylesheet" href="/newMovieStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,22 +43,22 @@
         <br>
         <form method='POST' action='/movie/newMovie'>
             <label for='title'>Title of Movie:</label>
-            <input type='text' name='title'>
+            <input type='text' class='form-control'name='title'>
             <br>
             <label for="rating">Rating:</label>
-            <input type="text" name="rating">
+            <input type="text" class='form-control' name="rating">
             <br>
             <label for="genre">Genre:</label>
-            <input type="text" name="genre">
+            <input type="text" class='form-control' name="genre">
             <br>
             <label for="summary">Movie Summary:</label>
-            <input type="text" name="summary">
+            <input type="text" class='form-control' name="summary">
             <br>
             <label for="moviecover" id='moviecover'>Movie Cover:</label>
-            <input type="text" name="moviecover">
+            <input type="text" class='form-control' name="moviecover">
             <br>
-            <a href='/movie' id='back'> Back To All </a> 
-            <input type='submit'>
+            <a href='/movie' id='back'> <button type='button' class='btn btn-default'>Go Back </a> 
+            <button type='submit' class='btn btn-success' class='img-circle'>Submit </button>
         </form>
     </div>
 </body>
