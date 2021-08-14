@@ -61,15 +61,22 @@ a:visited{
     color: rgba(1,1,1,0.7);
 }
 input[type='submit']{
-    height: 45px;
-    width: 130px;
-    border-radius: 25%;
-    color: #363636;
-    font-family: 'Epilogue', sans-serif;
-    text-align: center;
-    font-weight: 500;
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
-input[type='submit']:hover{
+#dropdownMenuButton{
+    width: 150px;
+    padding: 10px;
+    background: rgba(1,1,1,0.7);
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+#deleteform:hover{
     cursor: pointer;
     background-color: #363636;
     color: #D2D2D2;
@@ -89,20 +96,9 @@ h3{
     font-size: 20px;
 }
 #back{
-    display: grid;
-    font-weight: 400;
-    font-size: 16px;
-    text-decoration: none;
-    height: 15px;
-    width: 85px;
-    text-align: center;
-    border-radius: 25%;
-    color: #363636;
-    border: 2px solid rgba(1,1,1,0.7);
-    padding: 9px;
-    position: absolute;
-    background: rgba(255,255,255,0.7);
-    margin-top: 0.3%;
+    text-align: left;
+    letter-spacing: 2px;
+    font-size: 11px;
 }
 #back:hover{
     cursor: pointer;
@@ -110,32 +106,24 @@ h3{
     color: #D2D2D2;
 }
 #edit{
-    font-weight: 400;
-    font-size: 16px;
-    text-decoration: none;
-    height: 15px;
-    width: 85px;
-    text-align: center;
-    border-radius: 25%;
-    color: #363636;
-    border: 2px solid rgba(1,1,1,0.7);
-    padding: 9px;
-    position: absolute;
-    background: rgba(255,255,255,0.7);
-    margin-left: 9%;
-    margin-top: 0.5%;
+    letter-spacing: 2px;
 }
 #edit:hover{
     cursor: pointer;
     background-color: #363636;
     color: #D2D2D2;
 }
-#delete:hover{
-    background: maroon;
-    color: black;
-    font-weight: 800;
-}
 #delete{
-    position: relative;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
+.btn-primary{
+    border: 2px solid black;
+    background: rgba(1,1,1,0.6);
+}
+.btn-danger{
+    border: 2px solid black;
+}
+.btn-group{
+    display: flex;
+    justify-content: space-between;
+} 
