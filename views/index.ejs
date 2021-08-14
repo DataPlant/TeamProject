@@ -4,6 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel='stylesheet', href='/js/bootstrap.bundle.js'>
+    <link rel='stylesheet', href='/js/jquery-migrate-3.3.2.min.js'>
+    <link rel='stylesheet', href='/js/bootstrap.bundle.min.js'>
+    <link rel='stylesheet', href='/js/bootstrap.js'>
+    <link rel='stylesheet', href='/js/bootstrap.min.js'>
+    <link rel='stylesheet', href='/js/bootstrap.bundle.js.map'>
+    <link rel='stylesheet', href='/js/bootstrap.bundle.min.js.map'>
+    <link rel='stylesheet', href='/js/bootstrap.js.map'>
+    <link rel='stylesheet', href='/js/bootstrap.min.js.map'>
+    <link rel='stylesheet', href='/css/bootstrap-grid.css'>
+    <link rel='stylesheet', href='/css/bootstrap-grid.css.map'>
+    <link rel='stylesheet', href='/css/bootstrap-grid.min.css'>
+    <link rel='stylesheet', href='/css/bootstrap-grid.min.css.map'>
+    <link rel='stylesheet', href='/css/bootstrap-reboot.css'>
+    <link rel='stylesheet', href='/css/bootstrap-reboot.css.map'>
+    <link rel='stylesheet', href='/css/bootstrap-reboot.min.css'>
+    <link rel='stylesheet', href='/css/bootstrap-reboot.min.css.map'>
+    <link rel='stylesheet', href='/css/bootstrap.css'>
+    <link rel='stylesheet', href='/css/bootstrap.css.map'>
+    <link rel='stylesheet', href='/css/bootstrap.min.css'>
+    <link rel='stylesheet', href='/css/bootstrap.min.css.map'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -16,20 +39,68 @@
     </div>
     <br>
     <p>A place to catalogue your favorite music, games, movies, and TV Shows.</p>
-    <div id='categories'>
+    <!-- <div id='categories'>
         <div id='music-category'>
-            <a href='./music' id='music-link'><img src='/images/musicrmbg.png'></a>
+            <a href='./music' id='music-link'><img src='/images/musicrmbg.png'caption='Music'></a>
         </div>
         <div id='movie-category'>
-            <a href='./movie' id='movie-link'><img src='/images/moviermbg.png'></a>
+            <a href='./movie' id='movie-link'><img src='/images/moviermbg.png'caption='Movies'></a>
         </div>
         <div id='game-category'>
-            <a href='./game' id='game-link'><img src='/images/gamermbg.png'></a>
+            <a href='./game' id='game-link'><img src='/images/gamermbg.png'caption='Games'></a>
         </div>
         <div id='tv-category'>
-            <a href='./tv-show' id='tv-link'><img src='/images/tvrmbg.png'></a>
+            <a href='./tv-show' id='tv-link'><img src='/images/tvrmbg.png'caption='TV Shows'></a>
         </div>
     </div>
+    </div> -->
+    <ul>
+    <li id='music-area'>
+    <div class="col-lg-6" >
+        <div class="hover hover-3 text-white rounded">
+          <div class="hover-overlay"></div>
+          <div class="hover-3-content px-5 py-4">
+            <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light">Go To </span>Music</h3>
+            <a href='./music'><p class="hover-3-description small text-uppercase mb-0">View, add, and edit your <br>favorite music.</p></a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li id='game-area'>
+      <div class="col-lg-6" >
+        <div class="hover hover-3 text-white rounded">
+          <div class="hover-overlay"></div>
+          <div class="hover-3-content px-5 py-4">
+            <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light">Go To </span>Games</h3>
+            <a href='./game'><p class="hover-3-description small text-uppercase mb-0">View, add, and edit your <br>favorite games.</p></a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li id='movie-area'>
+        <div class="col-lg-6" >
+            <div class="hover hover-3 text-white rounded">
+              <div class="hover-overlay"></div>
+              <div class="hover-3-content px-5 py-4">
+                <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light">Go To </span>Movies</h3>
+                <a href='./movie'><p class="hover-3-description small text-uppercase mb-0">View, add, and edit your <br>favorite movies.</p></a>
+              </div>
+            </div>
+          </div>
+    </li>
+    <li id='tv-area'>
+        <div class="col-lg-6" >
+            <div class="hover hover-3 text-white rounded">
+              <div class="hover-overlay"></div>
+              <div class="hover-3-content px-5 py-4">
+                <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light">Go To </span>TV Shows</h3>
+                <a href='./tv-show'><p class="hover-3-description small text-uppercase mb-0">View, add, and edit your <br>favorite TV Shows.</p></a>
+              </div>
+            </div>
+          </div>
+    </li>
+    </ul>
     </div>
+  </div>
 </body>
 </html>
