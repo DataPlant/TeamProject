@@ -11,8 +11,11 @@ router.get('/', (req, res) => {
     })
 });
 router.get('/newGame', (req, res) =>{
-    res.render('game/newGame.ejs', {
-        allGenre: db.Genre
+    db.Genre.find({}, (err, allGenre) => {
+        if(err) return console.log(err);
+        res.render('game/newGame.ejs', {
+            allGenre: allGenre
+        })
     })
 })
 router.post('/newGame', (req, res) => {
@@ -25,7 +28,15 @@ router.post('/newGame', (req, res) => {
     };
     db.Game.create(data, (err, createdGame) => {
         if(err) return console.log(err);
-        res.redirect('/game')
+        db.Genre.findByIdAndUpdate(
+            createdGame.genre,
+            { $push: {games: createdGame}},
+            (err, updateGenre) => {
+                if(err) return console.log(err);
+                console.log(updateGenre)
+                res.redirect('/game')
+            }
+        )
     })
 });
 router.get('/:id', (req, res) => {

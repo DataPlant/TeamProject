@@ -1,15 +1,14 @@
+const mongoose = require('mongoose');
 
-
-const Genre = [
-    {  
-        _id: 'q543qg5q35gq',
-        genre: 'Horror',
-    },
-    {
-        _id: 'nreag43h3h6ws',
-        genre: 'Action',
-    },
-];
-
+const genreSchema = new mongoose.Schema({
+    genre: {type: String, required: true},
+    games: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Game'
+        }
+    ]
+});
+const Genre = mongoose.model('Genre', genreSchema);
 
 module.exports = Genre;

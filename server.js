@@ -7,6 +7,7 @@ const gameRoutes = require('./routes/gameRoutes.js');
 const musicRoutes = require('./routes/musicRoutes.js');
 const movieRoutes = require('./routes/movieRoutes.js');
 const tvRoutes = require('./routes/tvRoutes.js')
+const genreRoutes = require('./routes/genreRoutes.js')
 ////
 const PORT = 4000;
 ////
@@ -22,6 +23,7 @@ app.use('/game', gameRoutes);
 app.use('/music', musicRoutes);
 app.use('/movie', movieRoutes);
 app.use('/tv-show', tvRoutes);
+app.use('/genre', genreRoutes);
 
 app.listen(process.env.PORT || 4000, () => {
     console.log(`Running on localhost:${PORT}`);
