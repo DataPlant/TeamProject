@@ -50,10 +50,17 @@ router.get('/:id', (req, res) => {
 })
 router.get('/:id/edit', (req, res) => {
     db.Game.findById(req.params.id, (err, foundGame) => {
-        if(err) return console.log(err);
-        res.render('game/editGame.ejs', {
-            foundGame: foundGame
+        db.Genre.find({}, (err, allGenre) => {
+            if(err) return console.log(err);
+            res.render('game/editGame.ejs', {
+                allGenre: allGenre,
+                foundGame: foundGame
+            })
         })
+        // if(err) return console.log(err);
+        // res.render('game/editGame.ejs', {
+        //     foundGame: foundGame
+        // })
     })
 })
 router.put('/:id', (req, res) =>{

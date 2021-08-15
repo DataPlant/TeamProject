@@ -52,7 +52,14 @@
             <br>
             <label for="genre">New Genre:</label>
             <br>
-            <input type="text" name="genre" class='form-control' value='<%= foundGame.genre %>'>
+            <select name='genre'>
+                    <option value='<%=foundGame.genre%>' selected>Select</option>
+                <% for (i=0; i<allGenre.length; i++){ %>
+                    <option value='<%= allGenre[i]._id%>'>
+                        <%= allGenre[i].genre %>
+                    </option>
+                <% } %>
+            </select>
             <br>
             <label for="summary">New Game Summary:</label>
             <br>
