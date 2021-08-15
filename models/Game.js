@@ -4,10 +4,9 @@ const gameSchema = new mongoose.Schema({
     title: {type: String, required: true},
     console: String,
     summary: String,
-    genre: String,
-    testRef: {
+    genre: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Movie'
+        ref: 'Genre'
     }
 });
 const Game = mongoose.model('Game', gameSchema);
