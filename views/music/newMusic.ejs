@@ -4,6 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel='stylesheet', href='/js/bootstrap.bundle.js'>
+    <link rel='stylesheet', href='/js/jquery-migrate-3.3.2.min.js'>
+    <link rel='stylesheet', href='/js/bootstrap.bundle.min.js'>
+    <link rel='stylesheet', href='/js/bootstrap.js'>
+    <link rel='stylesheet', href='/js/bootstrap.min.js'>
+    <link rel='stylesheet', href='/js/bootstrap.bundle.js.map'>
+    <link rel='stylesheet', href='/js/bootstrap.bundle.min.js.map'>
+    <link rel='stylesheet', href='/js/bootstrap.js.map'>
+    <link rel='stylesheet', href='/js/bootstrap.min.js.map'>
+    <link rel='stylesheet', href='/css/bootstrap-grid.css'>
+    <link rel='stylesheet', href='/css/bootstrap-grid.css.map'>
+    <link rel='stylesheet', href='/css/bootstrap-grid.min.css'>
+    <link rel='stylesheet', href='/css/bootstrap-grid.min.css.map'>
+    <link rel='stylesheet', href='/css/bootstrap-reboot.css'>
+    <link rel='stylesheet', href='/css/bootstrap-reboot.css.map'>
+    <link rel='stylesheet', href='/css/bootstrap-reboot.min.css'>
+    <link rel='stylesheet', href='/css/bootstrap-reboot.min.css.map'>
+    <link rel='stylesheet', href='/css/bootstrap.css'>
+    <link rel='stylesheet', href='/css/bootstrap.css.map'>
+    <link rel='stylesheet', href='/css/bootstrap.min.css'>
+    <link rel='stylesheet', href='/css/bootstrap.min.css.map'>
     <link rel="stylesheet" href="/newMusicStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,39 +36,29 @@
 </head>
 <body>
     <%- include('../partials/navbar.ejs') %>
-    <h1 id='header'>Add A Song</h1>
+    <h1 id='header'>Add a Song</h1>
     <div id='body'>
-        <img src='../images/record.png' id='img'>
+        <img id='img' src='../images/record.png'>
         <br>
         <br>
         <form method='POST' action='/music/newMusic'>
-            <label for='title'>Song Title:</label>
-            <br>
-            <br>
-            <input type='text' name='title'>
+            <label for='title'>Title of Song:</label>
+            <input type='text' class='form-control'name='title'>
             <br>
             <label for="artist">Artist:</label>
-            <br>
-            <br>
-            <input type="text" name="artist">
+            <input type="text" class='form-control' name="artist">
             <br>
             <label for="genre">Genre:</label>
+            <input type="text" class='form-control' name="genre">
             <br>
-            <br>
-            <input type="text" name="genre">
-            <br>
-            <label for="link">Song Link:</label>
-            <br>
-            <br>
-            <input type="text" name="link">
+            <label for="link">Link:</label>
+            <input type="text" class='form-control' name="link">
             <br>
             <label for="musiccover" id='musiccover'>Album Cover:</label>
+            <input type="text" class='form-control' name="musiccover">
             <br>
-            <br>
-            <input type="text" name="musiccover">
-            <br>
-            <a href='/music' id='back'> Back To All </a> 
-            <input type='submit'>
+            <a href='/music' id='back'> <button type='button' class='btn btn-default'>Go Back </a> 
+            <button type='submit' class='btn btn-success' class='img-circle'>Submit </button>
         </form>
     </div>
 </body>
