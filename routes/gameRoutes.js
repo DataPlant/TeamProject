@@ -3,7 +3,9 @@ const router = express.Router();
 const db = require('../models/index.js');
 
 router.get('/', (req, res) => {
-    db.Game.find({}, (err, allGame) => {
+    db.Game.find({})
+    .populate('genre')
+    .exec((err, allGame) => {
         if(err) return console.log(err);
         res.render('game/game.ejs', {
             allGame: allGame
@@ -41,7 +43,9 @@ router.post('/newGame', (req, res) => {
 });
 router.get('/:id', (req, res) => {
     console.log(req.params.id)
-    db.Game.findById(req.params.id, (err, showGame) => {
+    db.Game.findById(req.params.id)
+    .populate('genre')
+    .exec((err, showGame) => {
         if(err) return console.log(err);
         res.render('game/showGame.ejs', {
             showGame: showGame

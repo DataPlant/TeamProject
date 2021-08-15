@@ -50,6 +50,7 @@
             <br>
             <label for="genre">Genre:</label>
             <select name='genre'>
+                <option value='' selected>Select</option>
                 <% for (i=0; i<allGenre.length; i++){ %>
                     <option value='<%= allGenre[i]._id %>'>
                         <%= allGenre[i].genre %>

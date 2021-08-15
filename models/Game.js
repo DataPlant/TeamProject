@@ -6,7 +6,8 @@ const gameSchema = new mongoose.Schema({
     summary: String,
     genre: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Genre'
+        required: true,
+        ref: 'Genre',
     }
 });
 const Game = mongoose.model('Game', gameSchema);

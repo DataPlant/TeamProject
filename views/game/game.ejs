@@ -47,7 +47,7 @@
             <a href='/game/<%= allGame[i]._id %>'>
                 <h2><%= allGame[i].title %></h2>
             </a>
-            <h3><%= allGame[i].genre %></h3>
+            <h3><%= allGame[i].genre.genre %></h3>
         </div>
         <div id='allButtons'>
             <a href='/game/<%= allGame[i]._id %>/edit' id='edit'>Edit Info</a>
