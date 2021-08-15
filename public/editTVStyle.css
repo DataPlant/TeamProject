@@ -29,6 +29,9 @@ h1{
     color: rgba(1,1,1,0.8);
 
 }
+.dropdown-toggle::after{
+    content: none;
+}
 nav {
     color: black;
     font-weight: 300;

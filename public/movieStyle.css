@@ -19,7 +19,18 @@ body {
     font-weight: 700;
     background: linear-gradient(to right, rgba(1,1,1,0.5), rgba(1,1,1,0.7), rgba(1,1,1,0.9) );
     font-size:80px;
-    letter-spacing: 200px;
+    letter-spacing: 260px;
+}
+
+.btn-default{
+    letter-spacing: 2px;
+    width: 100px;
+    display: inline;
+    font-size: 12px;
+    background: rgba(255,255,255,0.7);
+}
+.dropdown-toggle::after{
+    content: none;
 }
 nav {
     color: black;
@@ -43,9 +54,9 @@ a{
 }
 a:hover{
     color: white;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    background-color: rgba(1,1,1,0.8);
 }
-#addmovie{
+#addmusic{
     text-decoration: none;
 }
 #add{
@@ -145,7 +156,6 @@ h3{
     background: rgba(255,255,255,0.7);
 }
 #delete{
-    margin-left: 2%;
     margin-top: 18px;
     letter-spacing: 1px;
 }
