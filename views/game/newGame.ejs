@@ -49,7 +49,14 @@
             <input type="text" class='form-control' name="console">
             <br>
             <label for="genre">Genre:</label>
-            <input type="text" class='form-control' name="genre">
+            <select name='genre'>
+                <% for (i=0; i<allGenre.length; i++){ %>
+                    <option value='<%= allGenre[i]._id %>'>
+                        <%= allGenre[i].genre %>
+                    </option>
+                <% } %>
+            </select>
+            <!-- <input type="text" class='form-control' name="genre"> -->
             <br>
             <label for="summary">Summary:</label>
             <input type="text" class='form-control' name="summary">

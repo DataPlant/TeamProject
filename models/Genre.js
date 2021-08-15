@@ -1,9 +1,15 @@
-const mongoose = require('mongoose');
 
-const genreSchema = {
-    Horror: [],
-    Action: [],
-};
-const Genre = mongoose.model('Movie', genreSchema);
+
+const Genre = [
+    {  
+        _id: 'q543qg5q35gq',
+        genre: 'Horror',
+    },
+    {
+        _id: 'nreag43h3h6ws',
+        genre: 'Action',
+    },
+];
+
 
 module.exports = Genre;

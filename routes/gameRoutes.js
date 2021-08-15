@@ -11,8 +11,10 @@ router.get('/', (req, res) => {
     })
 });
 router.get('/newGame', (req, res) =>{
-    res.render('game/newGame.ejs')
-} );
+    res.render('game/newGame.ejs', {
+        allGenre: db.Genre
+    })
+})
 router.post('/newGame', (req, res) => {
     console.log(req.body);
     let data = {
