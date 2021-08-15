@@ -8,48 +8,45 @@ body {
     font-family: 'Epilogue', sans-serif;
     margin-bottom: 23%;
 }
+
 #ehub{
     color: rgba(1,1,1,0.85);
     text-align:center;
-    margin-top: 40%;
+    margin-top: 38%;
     font-size: 65px;
 }
 #title {
     border-radius: 100%;
-    height:200px;
-    width: 200px;
+    height:250px;
+    width: 250px;
     background-position: center;
     color: black;
     background: linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0.7), rgba(255,255,255,0.9) );
     margin-top: 100px;
-    padding: 50px;
+    padding: 35px;
     margin-left: 39%;
     margin-right: 200px;
 }
 #music-link:hover{
     height: 200px;
-    background-size: 280px;
     padding-top: 18px;
     padding-bottom: 18px;
     padding: 10px;
 }
 #game-link:hover{
     height: 170px;
-    background-size: 280px;
     padding: 10px;
     padding-top:20px;
     padding-bottom:20px;
 }
 #movie-link:hover{
     height: 200px;
-    background-size: 280px;
     padding: 10px;
     padding-top:20px;
     padding-bottom:20px;
 }
 #tv-link:hover{
     height: 230px;
-    background-size: 280px;
     padding: 6px;
 }
 #music-link{
@@ -63,7 +60,6 @@ body {
     width: 200px;
     margin-top: 3%;
     display: flex;
-    margin-left: 6%;
     padding-top: 18px;
     padding-bottom: 18px;
 }
@@ -110,6 +106,10 @@ body {
     margin-left: 75%;
     margin-top: 3%;
 }
+ul{
+    list-style-type: none;
+}
+
 p {
     color: rgba(1,1,1,0.85);
     background: linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0.7), rgba(255,255,255,0.9) );
@@ -119,11 +119,91 @@ p {
     font-size: 17px;
     letter-spacing: 5px;
 }
-a:hover{
-    color: white;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-}
 a:visited{
     color: #363636;
     border: 2px solid white;
 }
+h3{
+    margin-top: 10%;
+}
+#tv-area{
+    margin-top: 5%;
+    margin-left: 70%;
+    width: 100%;
+}
+#movie-area{
+    margin-top: 5%;
+    width: 100%;
+    margin-left: 45%;
+}
+#game-area{
+    margin-left: 22%;
+    width: 100%;
+    margin-top: 5%;
+}
+#music-area{
+    margin-top: 5%;
+
+}
+.hover-3::after {
+    content: '';
+    width: calc(100% - 3rem);
+    height: calc(100% - 3rem);
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    z-index: 90;
+    transition: all 0.3s;
+    transform: scale(1.1);
+    opacity: 0;
+    display: block;
+    opacity: 0;
+  }
+  
+  .hover-3-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 60%;
+    transform: translateY(-50%);
+    text-align: center;
+    z-index: 99;
+  }
+  
+  .hover-3-description {
+    opacity: 0;
+    transform: scale(1.3);
+    transition: all 0.3s;
+    
+  }
+  
+  .hover-3 img {
+    width: 110%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hover-3 .hover-overlay {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+  .hover-3:hover img {
+    width: 100%;
+  }
+  
+  .hover-3:hover::after {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .hover-3:hover .hover-3-description {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .hover-3:hover .hover-overlay {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  /* credit to: http://jqueryfordesigners.com/image-cross-fade-transition/ for front page hover */

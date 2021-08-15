@@ -4,6 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel='stylesheet', href='/js/bootstrap.bundle.js'>
+    <link rel='stylesheet', href='/js/jquery-migrate-3.3.2.min.js'>
+    <link rel='stylesheet', href='/js/bootstrap.bundle.min.js'>
+    <link rel='stylesheet', href='/js/bootstrap.js'>
+    <link rel='stylesheet', href='/js/bootstrap.min.js'>
+    <link rel='stylesheet', href='/js/bootstrap.bundle.js.map'>
+    <link rel='stylesheet', href='/js/bootstrap.bundle.min.js.map'>
+    <link rel='stylesheet', href='/js/bootstrap.js.map'>
+    <link rel='stylesheet', href='/js/bootstrap.min.js.map'>
+    <link rel='stylesheet', href='/css/bootstrap-grid.css'>
+    <link rel='stylesheet', href='/css/bootstrap-grid.css.map'>
+    <link rel='stylesheet', href='/css/bootstrap-grid.min.css'>
+    <link rel='stylesheet', href='/css/bootstrap-grid.min.css.map'>
+    <link rel='stylesheet', href='/css/bootstrap-reboot.css'>
+    <link rel='stylesheet', href='/css/bootstrap-reboot.css.map'>
+    <link rel='stylesheet', href='/css/bootstrap-reboot.min.css'>
+    <link rel='stylesheet', href='/css/bootstrap-reboot.min.css.map'>
+    <link rel='stylesheet', href='/css/bootstrap.css'>
+    <link rel='stylesheet', href='/css/bootstrap.css.map'>
+    <link rel='stylesheet', href='/css/bootstrap.min.css'>
+    <link rel='stylesheet', href='/css/bootstrap.min.css.map'>
     <link rel="stylesheet" href="/editMovieStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,32 +45,25 @@
         <form method='POST' action='/movie/<%= foundMovie._id %>?_method=PUT'>
             <label for='title'> New Title of Movie:</label>
             <br>
+            <input type='text' name='title' class='form-control' value='<%= foundMovie.title %>'>
             <br>
-            <input type='text' name='title' value='<%= foundMovie.title %>'>
+            <label for="rating" > New Rating:</label>
             <br>
-            <label for="rating"> New Rating:</label>
-            <br>
-            <br>
-            <input type="text" name="rating" value='<%= foundMovie.rating %>'>
+            <input type="text" name="rating" class='form-control' value='<%= foundMovie.rating %>'>
             <br>
             <label for="genre">Genre:</label>
             <br>
-            <br>
-            <input type="text" name="genre" value='<%= foundMovie.genre %>'>
+            <input type="text" name="genre" class='form-control' value='<%= foundMovie.genre %>'>
             <br>
             <label for="summary"> New Movie Summary:</label>
             <br>
-            <br>
-            <input type="text" name="summary" value='<%= foundMovie.summary %>'>
+            <input type="text" name="summary" class='form-control' value='<%= foundMovie.summary %>'>
             <br>
             <label for="moviecover" id='moviecover'> New Movie Cover:</label>
             <br>
+            <input type="text" name="moviecover" class='form-control'>
             <br>
-            <input type="text" name="moviecover">
-            <br>
-            <a href='/music' id='back'> Back To All </a> 
-            <input type='submit'>
-        </form>
-    </div>
+            <a href='/movie' id='back'> <button type='button' class='btn btn-default'>Go Back </a> 
+                <button type='submit' class='btn btn-success' class='img-circle'>Submit </button>
 </body>
 </html>
