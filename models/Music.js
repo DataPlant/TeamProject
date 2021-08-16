@@ -9,6 +9,7 @@ const musicSchema = new mongoose.Schema({
         ref: 'Genre',
     },
     link: String,
+    musiccover: String,
 });
 const Music = mongoose.model('Music', musicSchema);
 
