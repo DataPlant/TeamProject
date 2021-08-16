@@ -7,6 +7,10 @@ body {
     margin: 0px;
     font-family: 'Epilogue', sans-serif;
 }
+img{
+    height: 100%;
+    width: 100%;
+}
 #title{
     letter-spacing: 5px;
 }

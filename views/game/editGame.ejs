@@ -52,7 +52,7 @@
             <br>
             <label for="genre">New Genre:</label>
             <br>
-            <select name='genre'>
+            <select name='genre' class='form-control' id='select'>
                     <option value='<%=foundGame.genre%>' selected>Select</option>
                 <% for (i=0; i<allGenre.length; i++){ %>
                     <option value='<%= allGenre[i]._id%>'>
@@ -60,7 +60,7 @@
                     </option>
                 <% } %>
             </select>
-            <br>
+            <br> 
             <label for="summary">New Game Summary:</label>
             <br>
             <input type="text" name="summary" class='form-control' value='<%= foundGame.summary %>'>
