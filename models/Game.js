@@ -9,6 +9,7 @@ const gameSchema = new mongoose.Schema({
         required: true,
         ref: 'Genre',
     },
+    gamecover: String,
 });
 const Game = mongoose.model('Game', gameSchema);
 
