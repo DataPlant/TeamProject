@@ -27,6 +27,7 @@ router.post('/newGame', (req, res) => {
         console: req.body.console,
         summary: req.body.summary,
         genre: req.body.genre,
+        gamecover: req.body.gamecover,
     };
     db.Game.create(data, (err, createdGame) => {
         if(err) return console.log(err);
