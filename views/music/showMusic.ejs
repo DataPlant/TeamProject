@@ -31,7 +31,6 @@
     <link rel='stylesheet', href='/css/bootstrap.css.map'>
     <link rel='stylesheet', href='/css/bootstrap.min.css'>
     <link rel='stylesheet', href='/css/bootstrap.min.css.map'>
-    
     <link rel="stylesheet" href="/showMusicStyle.css">
     <title>Show Music</title>
 </head>
@@ -44,9 +43,11 @@
     <h2>Genre: </h2>
     <h3><%= showMusic.genre.genre %></h3>
     <h2>Link to Song: </h2>
-    <h3><a href='<%= showMusic.link %>' ><%= showMusic.title %></a></h3>
-    <br>
+    <h3><a href='<%= showMusic.link %>' id='songlink'><%= showMusic.title %></a></h3>
+    <h2>Cover:</h2>
     <img src='<%=showMusic.musiccover%>'>
+    <br>
+    <br>
     <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Options

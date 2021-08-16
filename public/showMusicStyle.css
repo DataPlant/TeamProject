@@ -7,15 +7,21 @@ body {
     margin: 0px;
     font-family: 'Epilogue', sans-serif;
 }
+img{
+    height: 100%;
+    width: 100%;
+}
 #songlink{
     color: #363636;
     text-decoration: underline;
     letter-spacing: 1px;
-    background: rgba(1,1,1,0.3);
     padding: 8px;
     word-wrap: break-word;
     text-align: left;
     font-size: 20px;
+}
+#songlink:hover{
+    color: #D2D2D2;
 }
 #title{
     letter-spacing: 5px;
