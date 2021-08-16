@@ -53,7 +53,14 @@
             <br>
             <label for="genre">New Genre:</label>
             <br>
-            <input type="text" name="genre" class='form-control' value='<%= foundMusic.genre %>'>
+            <select name='genre' class='form-control'>
+                    <option value='<%=foundMusic.genre%>' selected>Select</option>
+                <% for (i=0; i<allGenre.length; i++){ %>
+                    <option value='<%= allGenre[i]._id%>'>
+                        <%= allGenre[i].genre %>
+                    </option>
+                <% } %>
+            </select>
             <br>
             <label for="link">New Song link:</label>
             <br>

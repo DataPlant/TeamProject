@@ -47,7 +47,7 @@
             <a href='/movie/<%= allMovie[i]._id %>'>
                 <h2><%= allMovie[i].title %></h2>
             </a>
-            <h3><%= allMovie[i].genre %></h3>
+            <h3><%= allMovie[i].genre.genre %></h3>
         </div>
         <div id='allButtons'>
             <a href='/movie/<%= allMovie[i]._id %>/edit' id='edit'>Edit Info</a>
