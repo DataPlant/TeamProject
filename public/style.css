@@ -11,8 +11,7 @@ body {
 
 #ehub{
     color: rgba(1,1,1,0.85);
-    text-align:center;
-    margin-top: 38%;
+    margin-top: 35%;
     font-size: 65px;
 }
 #title {
@@ -26,6 +25,7 @@ body {
     padding: 35px;
     margin-left: 39%;
     margin-right: 200px;
+    text-align: center;
 }
 #music-link:hover{
     height: 200px;
@@ -126,6 +126,9 @@ a:visited{
 h3{
     margin-top: 10%;
 }
+#musictitle{
+    width: 70%;
+}
 #tv-area{
     margin-top: 5%;
     margin-left: 70%;
@@ -137,13 +140,14 @@ h3{
     margin-left: 45%;
 }
 #game-area{
-    margin-left: 22%;
+    margin-left: 20%;
     width: 100%;
     margin-top: 5%;
 }
 #music-area{
     margin-top: 5%;
-
+    margin-right: 80%;
+    width: 100%;
 }
 .hover-3::after {
     content: '';
