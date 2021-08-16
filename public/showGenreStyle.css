@@ -8,6 +8,15 @@ body {
     font-family: 'Epilogue', sans-serif;
     margin-bottom: 45%;
 }
+#header{
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 30px;
+}
+#genre-header{
+    font-size: 40px;
+    font-weight: 700;
+}
 #title {
     background-position: center;
     text-align: center;
@@ -19,7 +28,7 @@ body {
     font-weight: 700;
     background: linear-gradient(to right, rgba(1,1,1,0.5), rgba(1,1,1,0.7), rgba(1,1,1,0.9) );
     font-size:40px;
-    letter-spacing: 100px;
+    letter-spacing: 80px;
 }
 .btn-primary:hover{
     color: #D2D2D2;
@@ -27,7 +36,7 @@ body {
 }
 .btn-primary{
     border: none;
-    color: rgba(1,1,1,0.8);
+    color: #363636;
     background: rgba(255,255,255,0.7);
     font-family: 'Epilogue', sans-serif;
     font-size: 15px;
@@ -72,10 +81,10 @@ a:hover{
 ul{
     list-style-type: none;
 }
-#genre-form{
+#genre-info{
     text-align: left;
     font-size: 25px;
-    color: rgba(1,1,1,0.8);
+    color: black;
     padding: 20px;
     margin-left: 30%;
     background: rgba(1,1,1,0.7);
@@ -95,13 +104,6 @@ a:visited{
     text-align: center;
     padding: 10px;
     letter-spacing: 1px;
-}
-#text{
-    color: rgba(255,255,255,0.9);
-    font-weight: 300;
-}
-#input{
-    background: rgba(255,255,255,0.7);
 }
 #genre{
     color: #D2D2D2;
