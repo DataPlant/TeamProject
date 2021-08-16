@@ -2,7 +2,7 @@
 
 **Ehub.**
 
-*Link to Game:* [Ehub.](https://dkbrookeproj.herokuapp.com/music)
+*Link to Game:* [Ehub.](https://dkbrookeproj.herokuapp.com/)
 
 //////////////////////////////////////////////////////////////////////////////////
 
