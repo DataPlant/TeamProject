@@ -15,6 +15,16 @@ body {
     padding: 5px;
     border: 2px solid #D2D2D2;
 }
+#select{
+    background: rgba(1,1,1,0.4);
+    padding: 6px;
+    color: rgba(1,1,1,0.7);
+    font-size: 20px;
+    width: 100%;
+}
+#select:hover{
+    cursor: pointer;
+}
 h1{
     font-size: 50px;
 }

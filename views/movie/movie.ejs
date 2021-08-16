@@ -38,7 +38,8 @@
     <%- include('../partials/navbar.ejs') %>
     <h1 id='title'>Movies</h1>
     <br>
-    <h2 id='add'><a href='/movie/newMovie' id='newmovie'>Add Movie</a></h2>
+    <a href='/movie/newMovie' class='btn btn-primary' id='add'>Add Movie</a>
+    <br>
     <br>
     <% for(let i=0; i<allMovie.length; i++){ %>
         <ul id='movie'>
@@ -50,9 +51,9 @@
             <h3><%= allMovie[i].genre.genre %></h3>
         </div>
         <div id='allButtons'>
-            <a href='/movie/<%= allMovie[i]._id %>/edit' id='edit'>Edit Info</a>
+            <a href='/movie/<%= allMovie[i]._id %>/edit' class='btn btn-primary' id='edit'>Edit Info</a>
             <form action='/movie/<%= allMovie[i]._id %>?_method=DELETE' method='POST'>
-                <input type='submit' value='Delete Movie'id='delete'>
+                <input type='submit' value='Delete Movie'id='delete' class='btn btn-danger'>
             </form>
         </div>
         </ul>
