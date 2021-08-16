@@ -9,6 +9,7 @@ const tvShowSchema = new mongoose.Schema({
         required: true,
         ref: 'Genre',
     },
+    tvcover: String,
 });
 const TVShow = mongoose.model('TVShow', tvShowSchema);
 

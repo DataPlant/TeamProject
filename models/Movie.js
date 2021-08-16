@@ -9,6 +9,7 @@ const movieSchema = new mongoose.Schema({
         required: true,
         ref: 'Genre',
     },
+    moviecover: String,
 });
 const Movie = mongoose.model('Movie', movieSchema);
 

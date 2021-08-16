@@ -68,7 +68,8 @@
             <br>
             <label for="moviecover" id='moviecover'> New Movie Cover:</label>
             <br>
-            <input type="text" name="moviecover" class='form-control'>
+            <input type="text" class='form-control' name="moviecover" value='<%= foundMovie.summary %>'>
+            <br>
             <br>
             <a href='/movie' id='back'> <button type='button' class='btn btn-default'>Go Back </a> 
                 <button type='submit' class='btn btn-success' class='img-circle'>Submit </button>
