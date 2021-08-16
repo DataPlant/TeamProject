@@ -7,6 +7,16 @@ body {
     margin: 0px;
     font-family: 'Epilogue', sans-serif;
 }
+#songlink{
+    color: #363636;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    background: rgba(1,1,1,0.3);
+    padding: 8px;
+    word-wrap: break-word;
+    text-align: left;
+    font-size: 20px;
+}
 #title{
     letter-spacing: 5px;
 }

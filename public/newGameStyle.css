@@ -15,6 +15,16 @@ body {
     padding: 5px;
     border: 2px solid #D2D2D2;
 }
+#select{
+    background: rgba(1,1,1,0.4);
+    padding: 6px;
+    color: rgba(1,1,1,0.7);
+    font-size: 20px;
+    width: 100%;
+}
+#select:hover{
+    cursor: pointer;
+}
 #back:visited{
     color: #363636;
 }
@@ -102,22 +112,22 @@ input[type='text']{
 }
 .btn-default{
     margin-left: 0%;
-    margin-top: 3%;
+    margin-top: 15%;
     background: rgba(1,1,1,0.7);
     font-size: 11px;
     letter-spacing: 2px;
     border: 2px solid black;
     color: rgba(255,255,255,0.8);
     width: 105px;
+    margin-bottom: 0%;
 }
 .btn-success{
     text-align: center;
-    margin-left: 13%;
+    margin-left: 11.5%;
     width: 85px;
     height: 60px;
     font-size: 14px;
     padding: 10px;
     border-radius: 100%;
 }
-
 
