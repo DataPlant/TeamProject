@@ -53,7 +53,14 @@
             <br>
             <label for="genre">Genre:</label>
             <br>
-            <input type="text" name="genre" class='form-control' value='<%= foundMovie.genre %>'>
+            <select name='genre' class='form-control'>
+                    <option value='<%=foundMovie.genre%>' selected>Select</option>
+                <% for (i=0; i<allGenre.length; i++){ %>
+                    <option value='<%= allGenre[i]._id%>'>
+                        <%= allGenre[i].genre %>
+                    </option>
+                <% } %>
+            </select>
             <br>
             <label for="summary"> New Movie Summary:</label>
             <br>

@@ -17,6 +17,7 @@ router.get('/:id', (req, res) => {
     console.log(req.params.id)
     db.Genre.findById(req.params.id)
     .populate('games')
+    .populate('movies')
     .exec((err, foundGenre) => {
         if (err) return console.log(err);
         res.render('genre/showGenre.ejs', {

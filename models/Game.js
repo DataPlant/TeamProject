@@ -8,7 +8,7 @@ const gameSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         required: true,
         ref: 'Genre',
-    }
+    },
 });
 const Game = mongoose.model('Game', gameSchema);
 

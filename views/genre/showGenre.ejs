@@ -43,11 +43,22 @@
     <br>
     <br>
     <div id='genre-info'>
-    <% for (let i = 0; i < genre.games.length; i++) { %>
+      <h2>Games</h2>
+      <% for (let i = 0; i < genre.games.length; i++) { %>
         <a href="/game/<%= genre.games[i]._id %>">
             <li><%= genre.games[i].title %></li>
         </a>
+      <% } %>
+    </div>
+    <br>
+    <br>
+    <h2>Movies</h2>
+    <% for (let i = 0; i < genre.movies.length; i++) { %>
+        <a href="/movie/<%= genre.movies[i]._id %>">
+            <li><%= genre.movies[i].title %></li>
+        </a>
     <% } %>
-</div>
+    <br>
+    <br>
 </body>
 </html>
