@@ -49,7 +49,7 @@
             <a href='/music/<%= allMusic[i]._id %>'>
                 <h2><%= allMusic[i].title %></h2>
             </a>
-            <h3><%= allMusic[i].genre %></h3>
+            <h3><%= allMusic[i].genre.genre %></h3>
         </div>
         <div id='allButtons'>
             <a href='/music/<%= allMusic[i]._id %>/edit' id='edit'>Edit Info</a>

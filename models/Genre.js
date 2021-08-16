@@ -14,6 +14,18 @@ const genreSchema = new mongoose.Schema({
             ref: 'Movie'
         }
     ],
+    music: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Music'
+        }
+    ],
+    tvshows: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'TVShow'
+        }
+    ],
 });
 const Genre = mongoose.model('Genre', genreSchema);
 

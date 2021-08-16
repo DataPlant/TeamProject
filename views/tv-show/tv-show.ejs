@@ -47,7 +47,7 @@
             <a href='/tv-show/<%= allTV[i]._id %>'>
                 <h2><%= allTV[i].title %></h2>
             </a>
-            <h3><%= allTV[i].genre %></h3>
+            <h3><%= allTV[i].genre.genre %></h3>
         </div>
         <div id='allButtons'>
             <a href='/tv-show/<%= allTV[i]._id %>/edit' id='edit'>Edit Info</a>
