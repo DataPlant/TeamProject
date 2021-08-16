@@ -7,7 +7,13 @@ const genreSchema = new mongoose.Schema({
             type: mongoose.Schema.Types.ObjectId,
             ref: 'Game'
         }
-    ]
+    ],
+    movies: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Movie'
+        }
+    ],
 });
 const Genre = mongoose.model('Genre', genreSchema);
 
