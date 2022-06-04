@@ -36,10 +36,10 @@
 </head>
 <body>
     <%- include('../partials/navbar.ejs') %>
-    <h1 id='title'>Music</h1>
+    <h1 id='title'>Project 1</h1>
     <br>
     <br>
-    <a href='/music/newMusic' class='btn btn-primary' id='add'>Add Song</a>
+    <a href='/music/newMusic' class='btn btn-primary' id='add'>Add Mushroom</a>
     <br>
     <br>
     <% for(let i=0; i<allMusic.length; i++){ %>
@@ -54,7 +54,7 @@
         <div id='allButtons'>
             <a href='/music/<%= allMusic[i]._id %>/edit' class='btn btn-primary' id='edit'>Edit Info</a>
             <form action='/music/<%= allMusic[i]._id %>?_method=DELETE' method='POST'>
-                <input type='submit' value='Delete music' id='delete'  class='btn btn-danger'>
+                <input type='submit' value='Delete' id='delete'  class='btn btn-danger'>
             </form>
         </div>
         </ul>

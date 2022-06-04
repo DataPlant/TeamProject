@@ -32,19 +32,19 @@
     <link rel='stylesheet', href='/css/bootstrap.min.css'>
     <link rel='stylesheet', href='/css/bootstrap.min.css.map'>
     <link rel="stylesheet" href="/showMusicStyle.css">
-    <title>Show Music</title>
+    <title>Show Mushroom</title>
 </head>
 <body>
     <%- include('../partials/navbar.ejs') %>
     <div id='body'>
     <h1 id='title'><%= showMusic.title %></h1>
-    <h2>Artist: </h2>
+    <h2>Humidity: </h2>
     <h3><%= showMusic.artist %></h3>
-    <h2>Genre: </h2>
+    <h2>Growth Rate: </h2>
     <h3><%= showMusic.genre.genre %></h3>
-    <h2>Link to Song: </h2>
+    <h2>Link: </h2>
     <h3><a href='<%= showMusic.link %>' id='songlink'><%= showMusic.title %></a></h3>
-    <h2>Cover:</h2>
+    <h2>Picture:</h2>
     <img src='<%=showMusic.musiccover%>'>
     <br>
     <br>
@@ -54,7 +54,7 @@
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class='dropdown-item' href='/music'id='back'> Go Back </a>
-            <a class='dropdown-item' href="/music/<%= showMusic._id %>/edit" id='edit'>Edit music</a>
+            <a class='dropdown-item' href="/music/<%= showMusic._id %>/edit" id='edit'>Edit mushroom</a>
             <form action='/music/<%= showMusic._id %>?_method=DELETE' method='POST' class='dropdown-item'id='deleteform'>
             <input type='submit' value='Delete music' id='delete'>
             </form>

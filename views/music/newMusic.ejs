@@ -36,19 +36,19 @@
 </head>
 <body>
     <%- include('../partials/navbar.ejs') %>
-    <h1 id='header'>Add a Song</h1>
+    <h1 id='header'>Add Mushroom</h1>
     <div id='body'>
         <img id='img' src='../images/record.png'>
         <br>
         <br>
         <form method='POST' action='/music/newMusic'>
-            <label for='title'>Title of Song:</label>
+            <label for='title'>Name:</label>
             <input type='text' class='form-control'name='title'>
             <br>
-            <label for="artist">Artist:</label>
+            <label for="artist">Humidity:</label>
             <input type="text" class='form-control' name="artist">
             <br>
-            <label for="genre">Genre:</label>
+            <label for="genre">Growth Rate:</label>
             <select name='genre' id='select'>
                 <option value='' selected>Select</option>
                 <% for (i=0; i<allGenre.length; i++){ %>
@@ -62,7 +62,7 @@
             <label for="link">Link:</label>
             <input type="text" class='form-control' name="link">
             <br>
-            <label for="musiccover" id='musiccover'>Album Cover URL:</label>
+            <label for="musiccover" id='musiccover'>Mushroom Picture URL:</label>
             <input type="text" class='form-control' name="musiccover">
             <br>
             <a href='/music' id='back'> <button type='button' class='btn btn-default'>Go Back </a> 
