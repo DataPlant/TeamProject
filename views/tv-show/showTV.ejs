@@ -38,13 +38,13 @@
     <%- include('../partials/navbar.ejs') %>
     <div id='body'>
     <h1 id='title'><%= showTV.title %></h1>
-    <h2>Rating: </h2>
+    <h2>Humidity: </h2>
     <h3><%= showTV.rating %></h3>
-    <h2>Genre: </h2>
+    <h2>Growth Rate: </h2>
     <h3><%= showTV.genre.genre %></h3>
-    <h2>Summary: </h2>
+    <h2>Notes: </h2>
     <h3><%= showTV.summary %></h3>
-    <h2>Cover:</h2>
+    <h2>Picture:</h2>
     <img src='<%=showTV.tvcover%>'>
     <br>
     <br>
@@ -54,9 +54,9 @@
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class='dropdown-item' href='/tv-show'id='back'> Go Back </a>
-            <a class='dropdown-item' href="/tv-show/<%= showTV._id %>/edit" id='edit'>Edit tv</a>
+            <a class='dropdown-item' href="/tv-show/<%= showTV._id %>/edit" id='edit'>Edit</a>
             <form action='/tv-show/<%= showTV._id %>?_method=DELETE' method='POST' class='dropdown-item'id='deleteform'>
-            <input type='submit' value='Delete tv' id='delete'>
+            <input type='submit' value='Delete' id='delete'>
             </form>
         </div>
         </div>

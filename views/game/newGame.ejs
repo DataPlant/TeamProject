@@ -36,19 +36,19 @@
 </head>
 <body>
     <%- include('../partials/navbar.ejs') %>
-    <h1 id='header'>Add a game</h1>
+    <h1 id='header'>Add Mushroom</h1>
     <div id='body'>
         <img id='img' src='../images/controller.png'>
         <br>
         <br>
         <form method='POST' action='/game/newGame'>
-            <label for='title'>Title of Game:</label>
+            <label for='title'>Name:</label>
             <input type='text' class='form-control'name='title'>
             <br>
-            <label for="console">Console:</label>
+            <label for="console">Humidity:</label>
             <input type="text" class='form-control' name="console">
             <br>
-            <label for="genre">Genre:</label>
+            <label for="genre">Growth Rate:</label>
             <select name='genre' id='select'>
                 <option value='' selected>Select</option>
                 <% for (i=0; i<allGenre.length; i++){ %>
@@ -60,10 +60,10 @@
             <!-- <input type="text" class='form-control' name="genre"> -->
             <br>
             <br>
-            <label for="summary">Summary:</label>
+            <label for="summary">Notes:</label>
             <input type="text" class='form-control' name="summary">
             <br>
-            <label for="gamecover" id='gamecover'>Cover Image URL:</label>
+            <label for="gamecover" id='gamecover'>Picture URL:</label>
             <input type="text" class='form-control' name="gamecover">
             <br>
             <a href='/game' id='back'> <button type='button' class='btn btn-default'>Go Back </a> 

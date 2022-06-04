@@ -43,15 +43,15 @@
     <div id='body'>
         <br>
         <form method='POST' action='/movie/<%= foundMovie._id %>?_method=PUT'>
-            <label for='title'> New Title of Movie:</label>
+            <label for='title'> New Name:</label>
             <br>
             <input type='text' name='title' class='form-control' value='<%= foundMovie.title %>'>
             <br>
-            <label for="rating" > New Rating:</label>
+            <label for="rating" > New Humidity:</label>
             <br>
             <input type="text" name="rating" class='form-control' value='<%= foundMovie.rating %>'>
             <br>
-            <label for="genre">Genre:</label>
+            <label for="genre">New Growth Rate:</label>
             <br>
             <select name='genre' class='form-control'id='select'>
                     <option value='<%=foundMovie.genre%>' selected>Select</option>
@@ -62,11 +62,11 @@
                 <% } %>
             </select>
             <br>
-            <label for="summary"> New Movie Summary:</label>
+            <label for="summary"> New Notes:</label>
             <br>
             <input type="text" name="summary" class='form-control' value='<%= foundMovie.summary %>'>
             <br>
-            <label for="moviecover" id='moviecover'> New Movie Cover URL:</label>
+            <label for="moviecover" id='moviecover'> New Picture URL:</label>
             <br>
             <input type="text" class='form-control' name="moviecover" value='<%= foundMovie.summary %>'>
             <br>

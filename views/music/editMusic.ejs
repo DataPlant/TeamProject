@@ -43,15 +43,15 @@
     <div id='body'>
         <br>
         <form method='POST' action='/music/<%= foundMusic._id %>?_method=PUT'>
-            <label for='title'>Entry Identifier:</label>
+            <label for='title'>New Name:</label>
             <br>
             <input type='text' name='title' class='form-control' value='<%= foundMusic.title %>'>
             <br>
-            <label for="artist">New Artist:</label>
+            <label for="artist">New Humidity:</label>
             <br>
             <input type="text" name="artist" class='form-control' value='<%= foundMusic.artist %>'>
             <br>
-            <label for="genre">New Genre:</label>
+            <label for="genre">New Growth Rate:</label>
             <br>
             <select name='genre' class='form-control' id='select'>
                     <option value='<%=foundMusic.genre%>' selected>Select</option>
@@ -62,11 +62,11 @@
                 <% } %>
             </select>
             <br>
-            <label for="link">New Song link:</label>
+            <label for="link">New link:</label>
             <br>
             <input type="text" name="link" class='form-control' value='<%= foundMusic.link %>'>
             <br>
-            <label for="musiccover" id='musiccover'>New Album Cover:</label>
+            <label for="musiccover" id='musiccover'>New Picture:</label>
             <br>
             <input type="text" name="musiccover" class='form-control' value='<%= foundMusic.musiccover %>'>
             <br>

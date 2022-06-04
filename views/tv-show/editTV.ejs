@@ -43,15 +43,15 @@
     <div id='body'>
         <br>
         <form method='POST' action='/movie/<%= foundTV._id %>?_method=PUT'>
-            <label for='title'> New Title of Show:</label>
+            <label for='title'> New Name:</label>
             <br>
             <input type='text' name='title' class='form-control' value='<%= foundTV.title %>'>
             <br>
-            <label for="rating"> New Rating:</label>
+            <label for="rating"> New Humidity:</label>
             <br>
             <input type="text" name="rating" class='form-control' value='<%= foundTV.rating %>'>
             <br>
-            <label for="genre">Genre:</label>
+            <label for="genre">New Growth Rate:</label>
             <br>
             <select name='genre' class='form-control' id='select'>
                     <option value='<%=foundTV.genre%>' selected>Select</option>
@@ -62,10 +62,10 @@
                 <% } %>
             </select>
             <br>
-            <label for="summary"> New Show Summary:</label>
+            <label for="summary"> New Notes:</label>
             <input type="text" name="summary" class='form-control' value='<%= foundTV.summary %>'>
             <br>
-            <label for="tvcover"> New Cover Image URL:</label>
+            <label for="tvcover"> New Picture URL:</label>
             <input type="text" class='form-control' name="tvcover" value='<%= foundTV.summary %>'>
             <br>
             <a href='/tv-show' id='back'> <button type='button' class='btn btn-default'>Go Back </a> 

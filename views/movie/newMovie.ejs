@@ -36,19 +36,19 @@
 </head>
 <body>
     <%- include('../partials/navbar.ejs') %>
-    <h1 id='header'>Add a Movie</h1>
+    <h1 id='header'>Add Mushroom</h1>
     <div id='body'>
         <img id='img' src='../images/movie.png'>
         <br>
         <br>
         <form method='POST' action='/movie/newMovie'>
-            <label for='title'>Title of Movie:</label>
+            <label for='title'>Name:</label>
             <input type='text' class='form-control'name='title'>
             <br>
-            <label for="rating">Rating:</label>
+            <label for="rating">Humidity</label>
             <input type="text" class='form-control' name="rating">
             <br>
-            <label for="genre">Genre:</label>
+            <label for="genre">Growth Rate:</label>
             <select name='genre' id='select'>
                 <option value='' selected>Select</option>
                 <% for (i=0; i<allGenre.length; i++){ %>
@@ -59,10 +59,10 @@
             </select>
             <br>
             <br>
-            <label for="summary">Summary:</label>
+            <label for="summary">Notes:</label>
             <input type="text" class='form-control' name="summary">
             <br>
-            <label for="moviecover" id='moviecover'>Cover Image URL:</label>
+            <label for="moviecover" id='moviecover'>Picture URL:</label>
             <input type="text" class='form-control' name="moviecover">
             <br>
             <a href='/movie' id='back'> <button type='button' class='btn btn-default'>Go Back </a> 

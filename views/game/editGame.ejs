@@ -42,15 +42,15 @@
     </div>
     <div id='body'>
         <form method='POST' action='/game/<%= foundGame._id %>?_method=PUT'>
-            <label for='title'>New Title of Game:</label>
+            <label for='title'>New Name:</label>
             <br>
             <input type='text' name='title' class='form-control' value='<%= foundGame.title %>'>
             <br>
-            <label for="console">New Console:</label>
+            <label for="console">New Humidity:</label>
             <br>
             <input type="text" name="console" class='form-control' value='<%= foundGame.console %>'>
             <br>
-            <label for="genre">New Genre:</label>
+            <label for="genre">New Growth Rate:</label>
             <br>
             <select name='genre' class='form-control' id='select'>
                     <option value='<%=foundGame.genre%>' selected>Select</option>
@@ -61,11 +61,11 @@
                 <% } %>
             </select>
             <br> 
-            <label for="summary">New Game Summary:</label>
+            <label for="summary">New Notes:</label>
             <br>
             <input type="text" name="summary" class='form-control' value='<%= foundGame.summary %>'>
             <br>
-            <label for="gamecover" id='gamecover'> New Game Cover URL:</label>
+            <label for="gamecover" id='gamecover'> New Picture URL:</label>
             <br>
             <input type="text" class='form-control' name="gamecover" value='<%= foundGame.summary %>'>
             <a href='/game' id='back'> <button type='button' class='btn btn-default'>Go Back </a> 
